@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roadspeed"
+version = "0.1.0"
+description = "Measure vehicle speed on one road segment from a fixed camera: homography calibration, tracking, speed with uncertainty, validated on synthetic ground truth."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Rami Kronbi" }]
+keywords = ["road safety", "speed measurement", "homography", "tracking", "computer vision"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "opencv-python>=4.8",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+yolo = ["ultralytics>=8.0"]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+
+[project.scripts]
+roadspeed = "roadspeed.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+roadspeed = ["templates/*.html"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests", "experiments"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "NPY"]
+ignore = ["E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
