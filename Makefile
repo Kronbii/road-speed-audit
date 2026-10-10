@@ -20,7 +20,7 @@ format:
 	$(PY) -m ruff format src tests experiments
 	$(PY) -m ruff check --fix src tests experiments
 
-# Full synthetic validation: writes results/ and figures/ (about an hour on 10 cores).
+# Full synthetic validation: writes results/ and figures/ (roughly 1.5-2 h with 6 worker processes).
 reproduce:
 	$(PY) experiments/run_all.py
 	$(PY) experiments/demo_report.py

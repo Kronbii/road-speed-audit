@@ -1,6 +1,6 @@
 """Run the synthetic validation experiments and write results/ and figures/.
 
-    python experiments/run_all.py            # full set (about an hour on 10 cores)
+    python experiments/run_all.py            # full set (roughly 1.5-2 h with 6 worker processes)
     python experiments/run_all.py --quick    # small version -> results/quick, figures/quick
     python experiments/run_all.py --only e03_height e06_fps
 
