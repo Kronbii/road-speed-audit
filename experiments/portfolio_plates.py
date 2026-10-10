@@ -57,8 +57,8 @@ def distance(out: Path) -> None:
     rows = [r for r in rows if r["error_valid_kmh"].get("p95_abs") is not None]
     x = [r["level"]["zone_centre_m"] for r in rows]
     p95 = [r["error_valid_kmh"]["p95_abs"] for r in rows]
-    lo = [p - r["error_valid_kmh"]["p95_abs_ci"][0] for p, r in zip(p95, rows)]
-    hi = [r["error_valid_kmh"]["p95_abs_ci"][1] - p for p, r in zip(p95, rows)]
+    lo = [p - r["error_valid_kmh"]["p95_abs_ci"][0] for p, r in zip(p95, rows, strict=True)]
+    hi = [r["error_valid_kmh"]["p95_abs_ci"][1] - p for p, r in zip(p95, rows, strict=True)]
     valid = [100 * r["outcomes"]["valid"] / r["gt_vehicles"] for r in rows]
     fig, ax = plt.subplots(figsize=(6.4, 4.8))
     ax.errorbar(x, p95, yerr=[lo, hi], color=BLUE, marker="o", ms=7, lw=2.2, capsize=4)
