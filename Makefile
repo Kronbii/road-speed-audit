@@ -23,10 +23,12 @@ format:
 # Full synthetic validation: writes results/ and figures/ (about an hour on 10 cores).
 reproduce:
 	$(PY) experiments/run_all.py
+	$(PY) experiments/demo_report.py
 
 # Small version for a quick check: writes results/quick/ and figures/quick/ (a few minutes).
 reproduce-quick:
 	$(PY) experiments/run_all.py --quick
+	$(PY) experiments/demo_report.py --quick
 
 # Render a short simulated clip, measure it and build the report in work/demo/.
 demo:
