@@ -102,3 +102,40 @@ def test_identity_transfer_gives_two_records(camera):
     ests = estimate_speeds(tr, H, RoadAxis(), SpeedConfig(zone_start_m=20, zone_end_m=50))
     speeds = sorted(e.speed_kmh for e in ests if e.status != "rejected")
     assert speeds == pytest.approx([72.0, 90.0], abs=1e-6)
+
+
+def test_stitching_joins_pieces_of_one_vehicle(camera):
+    from roadspeed.pipeline import finalize
+    from roadspeed.stitch import stitch_tracks
+    from test_calibration import _site
+
+    full = _track_from_point(camera, 20.0, 1, x=1.75)
+    obs = full.observations
+    cut = len(obs) // 2
+    a = Track(track_id=1, kf=None, observations=obs[: cut - 3])  # 3 frames missing
+    b = Track(track_id=2, kf=None, observations=obs[cut:])
+    other = _track_from_point(camera, 25.0, -1, x=-1.75)
+    other.track_id = 3
+    H = camera.image_to_ground_homography()
+    out, joins = stitch_tracks([a, b, other], H, RoadAxis(), (20.0, 50.0))
+    assert joins == [(1, 2)] and len(out) == 2
+    # end to end through finalize: one valid record at the true speed per vehicle
+    site = _site(camera)
+    site.uncertainty = {"n_samples": 20}
+    res = finalize([a, b, other], site, 30.0, 300, 0.0, 10.0)
+    valid = sorted(r.speed_kmh for r in res.records if r.status == "valid")
+    assert valid == pytest.approx([72.0, 90.0], abs=1e-6)
+
+
+def test_stitching_refuses_inconsistent_pieces(camera):
+    from roadspeed.stitch import stitch_tracks
+
+    a = _track_from_point(camera, 20.0, 1, x=1.75)
+    a.observations = [o for o in a.observations if o.t < 1.2]
+    b = _track_from_point(camera, 30.0, 1, x=1.75)  # different speed
+    b.track_id = 2
+    b.observations = [o for o in b.observations if 1.3 < o.t]
+    out, joins = stitch_tracks(
+        [a, b], camera.image_to_ground_homography(), RoadAxis(), (20.0, 50.0)
+    )
+    assert joins == []

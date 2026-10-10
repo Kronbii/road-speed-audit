@@ -30,7 +30,7 @@ SOFT_FLAGS = {
     "mostly_merged",
 }
 # Informational flags: recorded, but they do not change the status on their own.
-INFO_FLAGS = {"split"}
+INFO_FLAGS = {"split", "stitched"}
 
 
 @dataclass

@@ -85,6 +85,7 @@ class SiteConfig:
     speed_limit_kmh: float | None = None
     detector: dict = field(default_factory=lambda: {"backend": "bgsub"})
     tracker: dict = field(default_factory=dict)
+    stitch: dict = field(default_factory=dict)  # overrides for StitchConfig
     speed: dict = field(default_factory=dict)  # overrides for SpeedConfig
     uncertainty: dict = field(default_factory=dict)
     roi: str | list = "auto"  # "auto", "none", or an image polygon [[u, v], ...]

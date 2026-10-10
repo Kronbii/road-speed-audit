@@ -259,8 +259,8 @@ def make_figures(records: list[dict], rep: dict, decisions: dict | None = None) 
     # 3. flow per interval
     dur = rep.get("duration_s") or 0
     if dur:
-        width = 300 if dur >= 1800 else 60
-        edges = np.arange(0, dur + width, width)
+        width = 300 if dur >= 1800 else (60 if dur >= 300 else max(10.0, dur / 5))
+        edges = np.append(np.arange(0, dur - 1e-9, width), dur)
         fig, ax = plt.subplots(figsize=(9, 2.6))
         cnt = [
             r
@@ -272,18 +272,19 @@ def make_figures(records: list[dict], rep: dict, decisions: dict | None = None) 
         bottom = np.zeros(len(edges) - 1)
         for d in ("towards", "away"):
             h, _ = np.histogram([r["t_mid_s"] for r in cnt if r["direction"] == d], bins=edges)
+            rate = h * 3600 / np.diff(edges)
             ax.bar(
                 edges[:-1] / 60,
-                h * 3600 / width,
-                width=width / 60 * 0.9,
+                rate,
+                width=np.diff(edges) / 60 * 0.9,
                 bottom=bottom,
                 align="edge",
                 color=colors[d],
                 label=d,
             )
-            bottom += h * 3600 / width
+            bottom += rate
         ax.set_xlabel("time since start (min)")
-        ax.set_ylabel(f"flow (veh/h, {width // 60}-min bins)")
+        ax.set_ylabel(f"flow (veh/h, {width / 60:.3g}-min bins)")
         ax.legend(fontsize=7)
         fig.tight_layout()
         figs["flow"] = fig

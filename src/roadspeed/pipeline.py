@@ -14,6 +14,7 @@ from .calibration import SiteConfig
 from .detect import make_detector
 from .records import VehicleRecord, dump_json, write_records_csv
 from .speed import SpeedEstimate, estimate_speeds
+from .stitch import StitchConfig, stitch_tracks
 from .tracking import Track, Tracker, TrackerConfig
 from .uncertainty import UncertaintyConfig, calibration_draws, effective_click_sigma, propagate
 
@@ -31,6 +32,7 @@ FLAG_TEXT = {
     "border": "vehicle touched the image border inside the zone",
     "mostly_merged": "most zone observations came from a blob shared with another vehicle",
     "split": "track was split at an identity jump; this record is one piece",
+    "stitched": "joined from track pieces consistent in lane, direction, speed and position",
 }
 
 
@@ -91,7 +93,15 @@ def finalize(tracks, site: SiteConfig, fps, n_frames, t_first, t_last, source_na
     W, Hh = (int(v) for v in cal.image_size)
     cam = cal.camera() if scfg.contact_height_m else None
     cc = None if cam is None else cam.C
-    estimates = [e for tr in tracks for e in estimate_speeds(tr, H, axis, scfg, lanes, (W, Hh), cc)]
+    tracks, joins = stitch_tracks(
+        tracks, H, axis, (scfg.zone_start_m, scfg.zone_end_m), StitchConfig(**site.stitch)
+    )
+    estimates = []
+    for tr in tracks:
+        for e in estimate_speeds(tr, H, axis, scfg, lanes, (W, Hh), cc):
+            if getattr(tr, "stitched_from", None):
+                e.flags.append("stitched")
+            estimates.append(e)
     # drop tracks that never came near the zone (keeps the record list about the zone)
     estimates = [e for e in estimates if e.n_points > 0]
     # records are numbered in time order of their zone crossing
@@ -175,6 +185,7 @@ def finalize(tracks, site: SiteConfig, fps, n_frames, t_first, t_last, source_na
         "lanes": site.lanes,
         "speed_limit_kmh": site.speed_limit_kmh,
         "n_tracks": len(tracks),
+        "stitch_joins": len(joins),
         "n_records": len(records),
         "counts": counts,
         "calibration": {
