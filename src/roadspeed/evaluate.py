@@ -148,6 +148,7 @@ class ScenarioResult:
     renderer: Renderer | None = None
     anns: dict | None = None
     cfg: ScenarioConfig | None = None
+    frame_match: tuple | None = None
 
 
 def run_scenario(
@@ -207,10 +208,32 @@ def _summ(e: np.ndarray) -> dict:
 
 
 def evaluate(
-    out: RunOutput, renderer: Renderer, anns: dict, cfg: ScenarioConfig, min_iou: float = 0.3
+    out: RunOutput,
+    renderer: Renderer,
+    anns: dict,
+    cfg: ScenarioConfig,
+    min_iou: float = 0.3,
+    frame_match=None,
 ):
+    """Score a run. Returns ``(metrics, vehicles)``.
+
+    ``frame_match`` (``(tracking, frame_track_gt)`` from an earlier call on the same
+    tracks) skips the frame-level matching when only speed estimation changed.
+    """
     gt = renderer.ground_truth_vehicles()
     gt_by_id = {g["vid"]: g for g in gt}
+    if frame_match is None:
+        frame_match = match_frames(out, renderer, anns, cfg, gt_by_id, min_iou)
+    tracking, frame_track_gt = frame_match
+    metrics, vehicles = score_records(out, gt, gt_by_id, frame_track_gt)
+    metrics = {"tracking": tracking, **metrics}
+    return metrics, vehicles
+
+
+def match_frames(
+    out: RunOutput, renderer: Renderer, anns: dict, cfg: ScenarioConfig, gt_by_id, min_iou=0.3
+):
+    """Frame-by-frame IoU matching of track observations to ground-truth boxes."""
     z = cfg.zone
     # tracking is scored where the pipeline is expected to track: the zone plus the
     # margins used for the region of interest; elsewhere boxes are "don't care"
@@ -328,7 +351,11 @@ def evaluate(
         "zone_fragmentations": zone_frag,
         "zone_fully_tracked_one_id": int(zone_fully_tracked),
     }
-    # ---------------- record-level matching (speed accuracy)
+    return tracking, frame_track_gt
+
+
+def score_records(out: RunOutput, gt, gt_by_id, frame_track_gt):
+    """Match records to ground-truth vehicles (majority vote over zone frames) and score."""
     recs_by_gt: dict[int, list] = {}
     false_records = {"valid": 0, "review": 0, "rejected": 0}
     for rec, est in zip(out.records, out.estimates, strict=True):
@@ -404,5 +431,5 @@ def evaluate(
         if any(v["status"] == "valid" and v["u_kmh"] for v in vehicles)
         else None,
     }
-    metrics = {"tracking": tracking, "speed": speed, "calibration": out.summary["calibration"]}
+    metrics = {"speed": speed, "calibration": out.summary["calibration"]}
     return metrics, vehicles

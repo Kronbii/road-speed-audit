@@ -216,7 +216,7 @@ def make_figures(records: list[dict], rep: dict, decisions: dict | None = None) 
         )
     ]
     figs = {}
-    colors = {"towards": "#2f6f8f", "away": "#c26a2b"}
+    colors = {"towards": "#2a78d6", "away": "#eb6834"}
     # 1. distribution + cumulative
     fig, ax = plt.subplots(1, 2, figsize=(9, 3.4))
     bins = np.arange(0, 165, 5)
