@@ -1,0 +1,1222 @@
+{
+  "experiment": "e10_v85",
+  "jobs": [
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1001,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1002,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1003,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1004,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1005,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1006,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1007,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1008,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1009,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1010,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1011,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1012,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1013,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1014,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1015,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1016,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1017,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1018,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1019,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    },
+    {
+      "cond": "normal62",
+      "duration": 180.0,
+      "level": {},
+      "overrides": {
+        "traffic.speed_dist": "normal",
+        "traffic.speed_mean_kmh": 62.0,
+        "traffic.speed_sd_kmh": 12.0
+      },
+      "preset": "baseline",
+      "seed": 1020,
+      "site": {
+        "speed_limit_kmh": 50.0
+      }
+    }
+  ],
+  "note": "speeds ~ Normal(62, 12) truncated 20-120 km/h (assumed), limit 50 km/h, 2-lane road, 300 veh/h/lane",
+  "runs": [
+    {
+      "flow_veh_h": {
+        "ci": [
+          312.7577,
+          726.3071
+        ],
+        "measured": 488.1356,
+        "true": 528.8136
+      },
+      "mean_kmh": {
+        "ci": [
+          56.8633,
+          65.5893
+        ],
+        "covered": true,
+        "error": 0.0829,
+        "measured": 61.0682,
+        "true": 60.9853
+      },
+      "n_counted": 24,
+      "n_measured": 23,
+      "n_true": 26,
+      "seed": 1001,
+      "share_over_limit": {
+        "ci": [
+          0.8696,
+          1.0
+        ],
+        "covered": true,
+        "error": -0.005,
+        "measured": 0.9565,
+        "true": 0.9615
+      },
+      "v85_kmh": {
+        "ci": [
+          64.0822,
+          78.3082
+        ],
+        "covered": true,
+        "error": 1.5565,
+        "measured": 74.2329,
+        "true": 72.6764
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          216.9751,
+          578.5985
+        ],
+        "measured": 366.1017,
+        "true": 427.1186
+      },
+      "mean_kmh": {
+        "ci": [
+          61.3973,
+          70.1132
+        ],
+        "covered": true,
+        "error": 0.8489,
+        "measured": 65.656,
+        "true": 64.8071
+      },
+      "n_counted": 18,
+      "n_measured": 17,
+      "n_true": 21,
+      "seed": 1002,
+      "share_over_limit": {
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "covered": true,
+        "error": 0.0,
+        "measured": 1.0,
+        "true": 1.0
+      },
+      "v85_kmh": {
+        "ci": [
+          67.4439,
+          80.6395
+        ],
+        "covered": true,
+        "error": -0.5731,
+        "measured": 76.5428,
+        "true": 77.1159
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          378.423,
+          823.0738
+        ],
+        "measured": 569.4915,
+        "true": 569.4915
+      },
+      "mean_kmh": {
+        "ci": [
+          56.7625,
+          65.4716
+        ],
+        "covered": true,
+        "error": -0.1034,
+        "measured": 60.9776,
+        "true": 61.081
+      },
+      "n_counted": 28,
+      "n_measured": 28,
+      "n_true": 28,
+      "seed": 1003,
+      "share_over_limit": {
+        "ci": [
+          0.6429,
+          0.9286
+        ],
+        "covered": true,
+        "error": -0.0,
+        "measured": 0.7857,
+        "true": 0.7857
+      },
+      "v85_kmh": {
+        "ci": [
+          66.9193,
+          80.7607
+        ],
+        "covered": true,
+        "error": -0.0907,
+        "measured": 74.5155,
+        "true": 74.6062
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          378.423,
+          823.0738
+        ],
+        "measured": 569.4915,
+        "true": 569.4915
+      },
+      "mean_kmh": {
+        "ci": [
+          55.552,
+          64.1026
+        ],
+        "covered": true,
+        "error": 0.3424,
+        "measured": 60.0895,
+        "true": 59.7471
+      },
+      "n_counted": 28,
+      "n_measured": 28,
+      "n_true": 28,
+      "seed": 1004,
+      "share_over_limit": {
+        "ci": [
+          0.6429,
+          0.9643
+        ],
+        "covered": true,
+        "error": -0.0,
+        "measured": 0.8214,
+        "true": 0.8214
+      },
+      "v85_kmh": {
+        "ci": [
+          66.03,
+          76.5646
+        ],
+        "covered": true,
+        "error": 0.4131,
+        "measured": 69.7188,
+        "true": 69.3057
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          312.7577,
+          726.3071
+        ],
+        "measured": 488.1356,
+        "true": 508.4746
+      },
+      "mean_kmh": {
+        "ci": [
+          57.3183,
+          67.3027
+        ],
+        "covered": true,
+        "error": -1.2554,
+        "measured": 62.0035,
+        "true": 63.2589
+      },
+      "n_counted": 24,
+      "n_measured": 24,
+      "n_true": 25,
+      "seed": 1005,
+      "share_over_limit": {
+        "ci": [
+          0.7917,
+          1.0
+        ],
+        "covered": true,
+        "error": -0.0033,
+        "measured": 0.9167,
+        "true": 0.92
+      },
+      "v85_kmh": {
+        "ci": [
+          62.9856,
+          87.2549
+        ],
+        "covered": true,
+        "error": -4.2154,
+        "measured": 69.3276,
+        "true": 73.543
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          329.0579,
+          750.6088
+        ],
+        "measured": 508.4746,
+        "true": 528.8136
+      },
+      "mean_kmh": {
+        "ci": [
+          61.2227,
+          68.1678
+        ],
+        "covered": true,
+        "error": -0.2517,
+        "measured": 64.4545,
+        "true": 64.7062
+      },
+      "n_counted": 25,
+      "n_measured": 25,
+      "n_true": 26,
+      "seed": 1006,
+      "share_over_limit": {
+        "ci": [
+          0.88,
+          1.0
+        ],
+        "covered": true,
+        "error": -0.0015,
+        "measured": 0.96,
+        "true": 0.9615
+      },
+      "v85_kmh": {
+        "ci": [
+          68.6555,
+          80.2798
+        ],
+        "covered": true,
+        "error": 0.1038,
+        "measured": 73.1014,
+        "true": 72.9976
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          280.4193,
+          677.4562
+        ],
+        "measured": 447.4576,
+        "true": 488.1356
+      },
+      "mean_kmh": {
+        "ci": [
+          56.8151,
+          69.08
+        ],
+        "covered": true,
+        "error": -0.9236,
+        "measured": 63.1265,
+        "true": 64.0501
+      },
+      "n_counted": 22,
+      "n_measured": 22,
+      "n_true": 24,
+      "seed": 1007,
+      "share_over_limit": {
+        "ci": [
+          0.6364,
+          0.9545
+        ],
+        "covered": true,
+        "error": -0.0151,
+        "measured": 0.8182,
+        "true": 0.8333
+      },
+      "v85_kmh": {
+        "ci": [
+          71.7319,
+          84.4905
+        ],
+        "covered": true,
+        "error": -0.484,
+        "measured": 78.2151,
+        "true": 78.6991
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          345.4386,
+          774.8344
+        ],
+        "measured": 528.8136,
+        "true": 549.1525
+      },
+      "mean_kmh": {
+        "ci": [
+          63.6204,
+          71.364
+        ],
+        "covered": true,
+        "error": 0.4967,
+        "measured": 67.5631,
+        "true": 67.0664
+      },
+      "n_counted": 26,
+      "n_measured": 25,
+      "n_true": 27,
+      "seed": 1008,
+      "share_over_limit": {
+        "ci": [
+          0.8,
+          1.0
+        ],
+        "covered": true,
+        "error": -0.0059,
+        "measured": 0.92,
+        "true": 0.9259
+      },
+      "v85_kmh": {
+        "ci": [
+          72.021,
+          83.7164
+        ],
+        "covered": true,
+        "error": 0.6036,
+        "measured": 76.8042,
+        "true": 76.2006
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          201.4195,
+          553.5996
+        ],
+        "measured": 345.7627,
+        "true": 386.4407
+      },
+      "mean_kmh": {
+        "ci": [
+          58.6288,
+          68.9701
+        ],
+        "covered": true,
+        "error": 1.1771,
+        "measured": 63.5128,
+        "true": 62.3357
+      },
+      "n_counted": 17,
+      "n_measured": 16,
+      "n_true": 19,
+      "seed": 1009,
+      "share_over_limit": {
+        "ci": [
+          0.625,
+          1.0
+        ],
+        "covered": true,
+        "error": -0.0296,
+        "measured": 0.8125,
+        "true": 0.8421
+      },
+      "v85_kmh": {
+        "ci": [
+          67.2335,
+          80.801
+        ],
+        "covered": true,
+        "error": 2.2024,
+        "measured": 76.0947,
+        "true": 73.8923
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          361.895,
+          798.9881
+        ],
+        "measured": 549.1525,
+        "true": 569.4915
+      },
+      "mean_kmh": {
+        "ci": [
+          55.3808,
+          63.9828
+        ],
+        "covered": true,
+        "error": -0.9762,
+        "measured": 59.9115,
+        "true": 60.8877
+      },
+      "n_counted": 27,
+      "n_measured": 25,
+      "n_true": 28,
+      "seed": 1010,
+      "share_over_limit": {
+        "ci": [
+          0.72,
+          1.0
+        ],
+        "covered": true,
+        "error": -0.0129,
+        "measured": 0.88,
+        "true": 0.8929
+      },
+      "v85_kmh": {
+        "ci": [
+          66.0772,
+          70.5721
+        ],
+        "covered": true,
+        "error": -0.762,
+        "measured": 69.1481,
+        "true": 69.9101
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          248.4716,
+          628.2382
+        ],
+        "measured": 406.7797,
+        "true": 406.7797
+      },
+      "mean_kmh": {
+        "ci": [
+          56.9275,
+          67.3832
+        ],
+        "covered": true,
+        "error": 0.4592,
+        "measured": 62.3146,
+        "true": 61.8554
+      },
+      "n_counted": 20,
+      "n_measured": 20,
+      "n_true": 20,
+      "seed": 1011,
+      "share_over_limit": {
+        "ci": [
+          0.6,
+          0.95
+        ],
+        "covered": true,
+        "error": 0.0,
+        "measured": 0.8,
+        "true": 0.8
+      },
+      "v85_kmh": {
+        "ci": [
+          67.6688,
+          78.216
+        ],
+        "covered": true,
+        "error": 0.5549,
+        "measured": 74.1054,
+        "true": 73.5505
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          329.0579,
+          750.6088
+        ],
+        "measured": 508.4746,
+        "true": 549.1525
+      },
+      "mean_kmh": {
+        "ci": [
+          52.0468,
+          62.9502
+        ],
+        "covered": true,
+        "error": -0.5973,
+        "measured": 57.4689,
+        "true": 58.0662
+      },
+      "n_counted": 25,
+      "n_measured": 24,
+      "n_true": 27,
+      "seed": 1012,
+      "share_over_limit": {
+        "ci": [
+          0.5,
+          0.875
+        ],
+        "covered": true,
+        "error": -0.037,
+        "measured": 0.6667,
+        "true": 0.7037
+      },
+      "v85_kmh": {
+        "ci": [
+          59.6637,
+          82.1135
+        ],
+        "covered": true,
+        "error": 1.3213,
+        "measured": 72.6745,
+        "true": 71.3532
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          248.4716,
+          628.2382
+        ],
+        "measured": 406.7797,
+        "true": 406.7797
+      },
+      "mean_kmh": {
+        "ci": [
+          57.5841,
+          70.3811
+        ],
+        "covered": true,
+        "error": -0.3237,
+        "measured": 64.207,
+        "true": 64.5307
+      },
+      "n_counted": 20,
+      "n_measured": 20,
+      "n_true": 20,
+      "seed": 1013,
+      "share_over_limit": {
+        "ci": [
+          0.6,
+          0.95
+        ],
+        "covered": true,
+        "error": 0.0,
+        "measured": 0.8,
+        "true": 0.8
+      },
+      "v85_kmh": {
+        "ci": [
+          69.5782,
+          83.6878
+        ],
+        "covered": true,
+        "error": -0.2653,
+        "measured": 75.7535,
+        "true": 76.0188
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          329.0579,
+          750.6088
+        ],
+        "measured": 508.4746,
+        "true": 528.8136
+      },
+      "mean_kmh": {
+        "ci": [
+          57.367,
+          68.3916
+        ],
+        "covered": true,
+        "error": -0.0231,
+        "measured": 62.6387,
+        "true": 62.6618
+      },
+      "n_counted": 25,
+      "n_measured": 25,
+      "n_true": 26,
+      "seed": 1014,
+      "share_over_limit": {
+        "ci": [
+          0.68,
+          0.96
+        ],
+        "covered": true,
+        "error": -0.0062,
+        "measured": 0.84,
+        "true": 0.8462
+      },
+      "v85_kmh": {
+        "ci": [
+          69.9486,
+          88.2308
+        ],
+        "covered": true,
+        "error": 0.3694,
+        "measured": 76.9677,
+        "true": 76.5983
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          345.4386,
+          774.8344
+        ],
+        "measured": 528.8136,
+        "true": 528.8136
+      },
+      "mean_kmh": {
+        "ci": [
+          56.3887,
+          67.0981
+        ],
+        "covered": true,
+        "error": -0.1603,
+        "measured": 61.5003,
+        "true": 61.6606
+      },
+      "n_counted": 26,
+      "n_measured": 26,
+      "n_true": 26,
+      "seed": 1015,
+      "share_over_limit": {
+        "ci": [
+          0.6538,
+          0.9615
+        ],
+        "covered": true,
+        "error": -0.0385,
+        "measured": 0.8077,
+        "true": 0.8462
+      },
+      "v85_kmh": {
+        "ci": [
+          66.4633,
+          89.1388
+        ],
+        "covered": true,
+        "error": -0.3186,
+        "measured": 75.9941,
+        "true": 76.3127
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          395.0187,
+          847.095
+        ],
+        "measured": 589.8305,
+        "true": 589.8305
+      },
+      "mean_kmh": {
+        "ci": [
+          57.5686,
+          66.5453
+        ],
+        "covered": true,
+        "error": 0.5253,
+        "measured": 62.1769,
+        "true": 61.6516
+      },
+      "n_counted": 29,
+      "n_measured": 29,
+      "n_true": 29,
+      "seed": 1016,
+      "share_over_limit": {
+        "ci": [
+          0.6897,
+          0.9655
+        ],
+        "covered": true,
+        "error": 0.0,
+        "measured": 0.8276,
+        "true": 0.8276
+      },
+      "v85_kmh": {
+        "ci": [
+          69.6196,
+          78.2792
+        ],
+        "covered": true,
+        "error": 0.3388,
+        "measured": 73.1081,
+        "true": 72.7693
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          395.0187,
+          847.095
+        ],
+        "measured": 589.8305,
+        "true": 589.8305
+      },
+      "mean_kmh": {
+        "ci": [
+          55.8167,
+          63.0439
+        ],
+        "covered": true,
+        "error": 0.0401,
+        "measured": 59.589,
+        "true": 59.5489
+      },
+      "n_counted": 29,
+      "n_measured": 28,
+      "n_true": 29,
+      "seed": 1017,
+      "share_over_limit": {
+        "ci": [
+          0.6786,
+          0.9286
+        ],
+        "covered": true,
+        "error": 0.0283,
+        "measured": 0.8214,
+        "true": 0.7931
+      },
+      "v85_kmh": {
+        "ci": [
+          62.9029,
+          75.5555
+        ],
+        "covered": true,
+        "error": -0.5633,
+        "measured": 70.9166,
+        "true": 71.4799
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          361.895,
+          798.9881
+        ],
+        "measured": 549.1525,
+        "true": 569.4915
+      },
+      "mean_kmh": {
+        "ci": [
+          64.1061,
+          72.9974
+        ],
+        "covered": true,
+        "error": -0.2857,
+        "measured": 68.5371,
+        "true": 68.8228
+      },
+      "n_counted": 27,
+      "n_measured": 27,
+      "n_true": 28,
+      "seed": 1018,
+      "share_over_limit": {
+        "ci": [
+          0.7778,
+          1.0
+        ],
+        "covered": true,
+        "error": -0.004,
+        "measured": 0.8889,
+        "true": 0.8929
+      },
+      "v85_kmh": {
+        "ci": [
+          74.4745,
+          85.9723
+        ],
+        "covered": true,
+        "error": -0.0232,
+        "measured": 81.0406,
+        "true": 81.0638
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          329.0579,
+          750.6088
+        ],
+        "measured": 508.4746,
+        "true": 508.4746
+      },
+      "mean_kmh": {
+        "ci": [
+          61.6884,
+          70.2806
+        ],
+        "covered": true,
+        "error": -0.5335,
+        "measured": 65.726,
+        "true": 66.2595
+      },
+      "n_counted": 25,
+      "n_measured": 25,
+      "n_true": 25,
+      "seed": 1019,
+      "share_over_limit": {
+        "ci": [
+          0.8,
+          1.0
+        ],
+        "covered": true,
+        "error": 0.0,
+        "measured": 0.92,
+        "true": 0.92
+      },
+      "v85_kmh": {
+        "ci": [
+          72.5104,
+          83.327
+        ],
+        "covered": true,
+        "error": -0.6408,
+        "measured": 75.8168,
+        "true": 76.4576
+      }
+    },
+    {
+      "flow_veh_h": {
+        "ci": [
+          345.4386,
+          774.8344
+        ],
+        "measured": 528.8136,
+        "true": 528.8136
+      },
+      "mean_kmh": {
+        "ci": [
+          59.9977,
+          66.7408
+        ],
+        "covered": true,
+        "error": -0.0379,
+        "measured": 63.3062,
+        "true": 63.3441
+      },
+      "n_counted": 26,
+      "n_measured": 26,
+      "n_true": 26,
+      "seed": 1020,
+      "share_over_limit": {
+        "ci": [
+          0.8846,
+          1.0
+        ],
+        "covered": true,
+        "error": -0.0,
+        "measured": 0.9615,
+        "true": 0.9615
+      },
+      "v85_kmh": {
+        "ci": [
+          67.2517,
+          76.4023
+        ],
+        "covered": true,
+        "error": -0.0472,
+        "measured": 72.4497,
+        "true": 72.4969
+      }
+    }
+  ],
+  "summary": {
+    "flow_veh_h": {
+      "count_error_abs_max": 3,
+      "count_error_mean": -0.85,
+      "mean_error": -17.2881,
+      "mean_relative_error_pct": -3.5392,
+      "note": "the flow interval describes the rate behind the count; here the realised count is compared"
+    },
+    "mean_kmh": {
+      "ci_coverage": 1.0,
+      "max_abs_error": 1.2554,
+      "mean_ci_width": 9.3452,
+      "mean_error": -0.075,
+      "rmse": 0.6032,
+      "runs": 20
+    },
+    "share_over_limit": {
+      "ci_coverage": 1.0,
+      "max_abs_error": 0.0385,
+      "mean_ci_width": 0.2483,
+      "mean_error": -0.0065,
+      "rmse": 0.0159,
+      "runs": 20
+    },
+    "v85_kmh": {
+      "ci_coverage": 1.0,
+      "max_abs_error": 4.2154,
+      "mean_ci_width": 13.5525,
+      "mean_error": -0.026,
+      "rmse": 1.2237,
+      "runs": 20
+    }
+  },
+  "title": "Mean speed, V85 and share over the limit on synthetic traffic"
+}

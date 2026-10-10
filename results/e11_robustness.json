@@ -1,0 +1,1321 @@
+{
+  "conditions": [
+    {
+      "ci95_coverage": 0.9706,
+      "cond": "base",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.2634,
+        "bias_ci": [
+          -0.3946,
+          -0.136
+        ],
+        "mae": 0.3723,
+        "max_abs": 1.2009,
+        "n": 34,
+        "p95_abs": 0.9107,
+        "p95_abs_ci": [
+          0.5959,
+          1.2009
+        ],
+        "rmse": 0.4662,
+        "rmse_ci": [
+          0.34,
+          0.5821
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "baseline (shadows, noise 2, JPEG 90)"
+      },
+      "median_u_kmh": 0.525,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 349,
+        "false_positives": 487,
+        "fragmentations": 19,
+        "gt_boxes": 6229,
+        "id_switches": 2,
+        "mostly_tracked": 32,
+        "mota": 0.8655,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 31,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 0.5882,
+      "cond": "no_shadows",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.7845,
+        "bias_ci": [
+          -0.9833,
+          -0.6004
+        ],
+        "mae": 0.7902,
+        "max_abs": 2.4208,
+        "n": 34,
+        "p95_abs": 1.8216,
+        "p95_abs_ci": [
+          1.2016,
+          2.4208
+        ],
+        "rmse": 0.9551,
+        "rmse_ci": [
+          0.7186,
+          1.1727
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "no cast shadows"
+      },
+      "median_u_kmh": 0.5259,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 239,
+        "false_positives": 238,
+        "fragmentations": 14,
+        "gt_boxes": 6229,
+        "id_switches": 2,
+        "mostly_tracked": 34,
+        "mota": 0.9231,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 31,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 1.0,
+      "cond": "low_sun",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.177,
+        "bias_ci": [
+          -0.3483,
+          -0.0043
+        ],
+        "mae": 0.4479,
+        "max_abs": 1.3739,
+        "n": 28,
+        "p95_abs": 0.8175,
+        "p95_abs_ci": [
+          0.6401,
+          1.3739
+        ],
+        "rmse": 0.5201,
+        "rmse_ci": [
+          0.3964,
+          0.6621
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 2,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "low sun (elevation 20 deg, long shadows)"
+      },
+      "median_u_kmh": 0.6075,
+      "outcomes": {
+        "missed": 4,
+        "rejected_only": 2,
+        "review_only": 0,
+        "valid": 28
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 1607,
+        "false_positives": 2196,
+        "fragmentations": 65,
+        "gt_boxes": 6229,
+        "id_switches": 14,
+        "mostly_tracked": 18,
+        "mota": 0.3872,
+        "trajectories": 34,
+        "zone_fragmentations": 9,
+        "zone_fully_tracked_one_id": 15,
+        "zone_id_switches": 2,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 0.8235
+    },
+    {
+      "ci95_coverage": 1.0,
+      "cond": "noise4",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.2037,
+        "bias_ci": [
+          -0.341,
+          -0.0668
+        ],
+        "mae": 0.3621,
+        "max_abs": 1.189,
+        "n": 34,
+        "p95_abs": 0.8784,
+        "p95_abs_ci": [
+          0.6462,
+          1.189
+        ],
+        "rmse": 0.4614,
+        "rmse_ci": [
+          0.3456,
+          0.5695
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "sensor noise sigma 4"
+      },
+      "median_u_kmh": 0.5237,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 301,
+        "false_positives": 307,
+        "fragmentations": 16,
+        "gt_boxes": 6229,
+        "id_switches": 2,
+        "mostly_tracked": 33,
+        "mota": 0.9021,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 31,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 1.0,
+      "cond": "noise8",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.05,
+        "bias_ci": [
+          -0.2134,
+          0.1005
+        ],
+        "mae": 0.3652,
+        "max_abs": 1.304,
+        "n": 34,
+        "p95_abs": 0.8447,
+        "p95_abs_ci": [
+          0.689,
+          1.304
+        ],
+        "rmse": 0.4825,
+        "rmse_ci": [
+          0.3555,
+          0.5939
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "sensor noise sigma 8"
+      },
+      "median_u_kmh": 0.5245,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 426,
+        "false_positives": 274,
+        "fragmentations": 28,
+        "gt_boxes": 6229,
+        "id_switches": 6,
+        "mostly_tracked": 31,
+        "mota": 0.8867,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 31,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 0.9706,
+      "cond": "jpeg60",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.2409,
+        "bias_ci": [
+          -0.383,
+          -0.1081
+        ],
+        "mae": 0.3748,
+        "max_abs": 1.324,
+        "n": 34,
+        "p95_abs": 0.8739,
+        "p95_abs_ci": [
+          0.5988,
+          1.324
+        ],
+        "rmse": 0.4734,
+        "rmse_ci": [
+          0.3416,
+          0.602
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "JPEG quality 60"
+      },
+      "median_u_kmh": 0.5232,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 366,
+        "false_positives": 437,
+        "fragmentations": 23,
+        "gt_boxes": 6229,
+        "id_switches": 3,
+        "mostly_tracked": 32,
+        "mota": 0.8706,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 31,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 1.0,
+      "cond": "jpeg30",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.2311,
+        "bias_ci": [
+          -0.3641,
+          -0.107
+        ],
+        "mae": 0.3489,
+        "max_abs": 1.1599,
+        "n": 33,
+        "p95_abs": 0.9261,
+        "p95_abs_ci": [
+          0.5413,
+          1.1599
+        ],
+        "rmse": 0.446,
+        "rmse_ci": [
+          0.3241,
+          0.5531
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "JPEG quality 30"
+      },
+      "median_u_kmh": 0.5319,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 1,
+        "valid": 33
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 445,
+        "false_positives": 575,
+        "fragmentations": 31,
+        "gt_boxes": 6229,
+        "id_switches": 5,
+        "mostly_tracked": 29,
+        "mota": 0.8354,
+        "trajectories": 34,
+        "zone_fragmentations": 3,
+        "zone_fully_tracked_one_id": 31,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 0.9706
+    },
+    {
+      "ci95_coverage": 0.9706,
+      "cond": "blur250",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.2518,
+        "bias_ci": [
+          -0.382,
+          -0.1261
+        ],
+        "mae": 0.3656,
+        "max_abs": 1.2099,
+        "n": 34,
+        "p95_abs": 0.89,
+        "p95_abs_ci": [
+          0.5753,
+          1.2099
+        ],
+        "rmse": 0.4581,
+        "rmse_ci": [
+          0.3341,
+          0.574
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "motion blur, 1/250 s exposure"
+      },
+      "median_u_kmh": 0.5236,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 348,
+        "false_positives": 486,
+        "fragmentations": 19,
+        "gt_boxes": 6229,
+        "id_switches": 2,
+        "mostly_tracked": 32,
+        "mota": 0.8658,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 31,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 0.9706,
+      "cond": "blur100",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.2548,
+        "bias_ci": [
+          -0.383,
+          -0.1265
+        ],
+        "mae": 0.3722,
+        "max_abs": 1.1501,
+        "n": 34,
+        "p95_abs": 0.8693,
+        "p95_abs_ci": [
+          0.5902,
+          1.1501
+        ],
+        "rmse": 0.4597,
+        "rmse_ci": [
+          0.3469,
+          0.5685
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "motion blur, 1/100 s exposure"
+      },
+      "median_u_kmh": 0.522,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 351,
+        "false_positives": 511,
+        "fragmentations": 19,
+        "gt_boxes": 6229,
+        "id_switches": 2,
+        "mostly_tracked": 32,
+        "mota": 0.8613,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 31,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 1.0,
+      "cond": "blur30",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0378,
+        "bias_ci": [
+          -0.2313,
+          0.1464
+        ],
+        "mae": 0.3757,
+        "max_abs": 1.5631,
+        "n": 34,
+        "p95_abs": 1.1945,
+        "p95_abs_ci": [
+          0.5945,
+          1.5631
+        ],
+        "rmse": 0.5334,
+        "rmse_ci": [
+          0.3361,
+          0.7018
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "motion blur, 1/30 s exposure"
+      },
+      "median_u_kmh": 0.54,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 358,
+        "false_positives": 479,
+        "fragmentations": 18,
+        "gt_boxes": 6229,
+        "id_switches": 2,
+        "mostly_tracked": 32,
+        "mota": 0.8653,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 31,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 0.9706,
+      "cond": "drift",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.034,
+        "bias_ci": [
+          -0.2182,
+          0.1536
+        ],
+        "mae": 0.472,
+        "max_abs": 1.3925,
+        "n": 34,
+        "p95_abs": 1.0926,
+        "p95_abs_ci": [
+          0.7993,
+          1.3925
+        ],
+        "rmse": 0.5824,
+        "rmse_ci": [
+          0.4521,
+          0.7097
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "lighting drift +-15 % (20 s period)"
+      },
+      "median_u_kmh": 0.5466,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 635,
+        "false_positives": 524,
+        "fragmentations": 64,
+        "gt_boxes": 6229,
+        "id_switches": 7,
+        "mostly_tracked": 29,
+        "mota": 0.8128,
+        "trajectories": 34,
+        "zone_fragmentations": 6,
+        "zone_fully_tracked_one_id": 28,
+        "zone_id_switches": 1,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 0.9032,
+      "cond": "jumps",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0408,
+        "bias_ci": [
+          -0.2756,
+          0.2022
+        ],
+        "mae": 0.5023,
+        "max_abs": 1.9837,
+        "n": 31,
+        "p95_abs": 1.3836,
+        "p95_abs_ci": [
+          0.7945,
+          1.9837
+        ],
+        "rmse": 0.673,
+        "rmse_ci": [
+          0.4387,
+          0.8873
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 1,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "exposure jumps (x0.7 at 30 s, x1.4 at 60 s)"
+      },
+      "median_u_kmh": 0.5317,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 3,
+        "review_only": 0,
+        "valid": 31
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 709,
+        "false_positives": 599,
+        "fragmentations": 69,
+        "gt_boxes": 6229,
+        "id_switches": 8,
+        "mostly_tracked": 30,
+        "mota": 0.7887,
+        "trajectories": 34,
+        "zone_fragmentations": 6,
+        "zone_fully_tracked_one_id": 28,
+        "zone_id_switches": 1,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 0.9118
+    },
+    {
+      "ci95_coverage": 0.5882,
+      "cond": "dusk",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.8168,
+        "bias_ci": [
+          -1.0117,
+          -0.6264
+        ],
+        "mae": 0.8249,
+        "max_abs": 2.4036,
+        "n": 34,
+        "p95_abs": 1.8181,
+        "p95_abs_ci": [
+          1.2638,
+          2.4036
+        ],
+        "rmse": 0.9918,
+        "rmse_ci": [
+          0.756,
+          1.2047
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "level": {
+        "label": "dusk: 45 % light, noise 4"
+      },
+      "median_u_kmh": 0.5202,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 625,
+        "false_positives": 41,
+        "fragmentations": 22,
+        "gt_boxes": 6229,
+        "id_switches": 0,
+        "mostly_tracked": 29,
+        "mota": 0.8931,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 31,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    }
+  ],
+  "experiment": "e11_robustness",
+  "jobs": [
+    {
+      "cond": "base",
+      "duration": 90.0,
+      "level": {
+        "label": "baseline (shadows, noise 2, JPEG 90)"
+      },
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "base",
+      "duration": 90.0,
+      "level": {
+        "label": "baseline (shadows, noise 2, JPEG 90)"
+      },
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "base",
+      "duration": 90.0,
+      "level": {
+        "label": "baseline (shadows, noise 2, JPEG 90)"
+      },
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "no_shadows",
+      "duration": 90.0,
+      "level": {
+        "label": "no cast shadows"
+      },
+      "overrides": {
+        "lighting.shadows": false
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "no_shadows",
+      "duration": 90.0,
+      "level": {
+        "label": "no cast shadows"
+      },
+      "overrides": {
+        "lighting.shadows": false
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "no_shadows",
+      "duration": 90.0,
+      "level": {
+        "label": "no cast shadows"
+      },
+      "overrides": {
+        "lighting.shadows": false
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "low_sun",
+      "duration": 90.0,
+      "level": {
+        "label": "low sun (elevation 20 deg, long shadows)"
+      },
+      "overrides": {
+        "lighting.sun_elevation_deg": 20.0
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "low_sun",
+      "duration": 90.0,
+      "level": {
+        "label": "low sun (elevation 20 deg, long shadows)"
+      },
+      "overrides": {
+        "lighting.sun_elevation_deg": 20.0
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "low_sun",
+      "duration": 90.0,
+      "level": {
+        "label": "low sun (elevation 20 deg, long shadows)"
+      },
+      "overrides": {
+        "lighting.sun_elevation_deg": 20.0
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "noise4",
+      "duration": 90.0,
+      "level": {
+        "label": "sensor noise sigma 4"
+      },
+      "overrides": {
+        "camera.noise_sigma": 4.0
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "noise4",
+      "duration": 90.0,
+      "level": {
+        "label": "sensor noise sigma 4"
+      },
+      "overrides": {
+        "camera.noise_sigma": 4.0
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "noise4",
+      "duration": 90.0,
+      "level": {
+        "label": "sensor noise sigma 4"
+      },
+      "overrides": {
+        "camera.noise_sigma": 4.0
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "noise8",
+      "duration": 90.0,
+      "level": {
+        "label": "sensor noise sigma 8"
+      },
+      "overrides": {
+        "camera.noise_sigma": 8.0
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "noise8",
+      "duration": 90.0,
+      "level": {
+        "label": "sensor noise sigma 8"
+      },
+      "overrides": {
+        "camera.noise_sigma": 8.0
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "noise8",
+      "duration": 90.0,
+      "level": {
+        "label": "sensor noise sigma 8"
+      },
+      "overrides": {
+        "camera.noise_sigma": 8.0
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "jpeg60",
+      "duration": 90.0,
+      "level": {
+        "label": "JPEG quality 60"
+      },
+      "overrides": {
+        "camera.jpeg_quality": 60
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "jpeg60",
+      "duration": 90.0,
+      "level": {
+        "label": "JPEG quality 60"
+      },
+      "overrides": {
+        "camera.jpeg_quality": 60
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "jpeg60",
+      "duration": 90.0,
+      "level": {
+        "label": "JPEG quality 60"
+      },
+      "overrides": {
+        "camera.jpeg_quality": 60
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "jpeg30",
+      "duration": 90.0,
+      "level": {
+        "label": "JPEG quality 30"
+      },
+      "overrides": {
+        "camera.jpeg_quality": 30
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "jpeg30",
+      "duration": 90.0,
+      "level": {
+        "label": "JPEG quality 30"
+      },
+      "overrides": {
+        "camera.jpeg_quality": 30
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "jpeg30",
+      "duration": 90.0,
+      "level": {
+        "label": "JPEG quality 30"
+      },
+      "overrides": {
+        "camera.jpeg_quality": 30
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "blur250",
+      "duration": 90.0,
+      "level": {
+        "label": "motion blur, 1/250 s exposure"
+      },
+      "overrides": {
+        "camera.blur_subframes": 4,
+        "camera.exposure_s": 0.004
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "blur250",
+      "duration": 90.0,
+      "level": {
+        "label": "motion blur, 1/250 s exposure"
+      },
+      "overrides": {
+        "camera.blur_subframes": 4,
+        "camera.exposure_s": 0.004
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "blur250",
+      "duration": 90.0,
+      "level": {
+        "label": "motion blur, 1/250 s exposure"
+      },
+      "overrides": {
+        "camera.blur_subframes": 4,
+        "camera.exposure_s": 0.004
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "blur100",
+      "duration": 90.0,
+      "level": {
+        "label": "motion blur, 1/100 s exposure"
+      },
+      "overrides": {
+        "camera.blur_subframes": 6,
+        "camera.exposure_s": 0.01
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "blur100",
+      "duration": 90.0,
+      "level": {
+        "label": "motion blur, 1/100 s exposure"
+      },
+      "overrides": {
+        "camera.blur_subframes": 6,
+        "camera.exposure_s": 0.01
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "blur100",
+      "duration": 90.0,
+      "level": {
+        "label": "motion blur, 1/100 s exposure"
+      },
+      "overrides": {
+        "camera.blur_subframes": 6,
+        "camera.exposure_s": 0.01
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "blur30",
+      "duration": 90.0,
+      "level": {
+        "label": "motion blur, 1/30 s exposure"
+      },
+      "overrides": {
+        "camera.blur_subframes": 8,
+        "camera.exposure_s": 0.0333
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "blur30",
+      "duration": 90.0,
+      "level": {
+        "label": "motion blur, 1/30 s exposure"
+      },
+      "overrides": {
+        "camera.blur_subframes": 8,
+        "camera.exposure_s": 0.0333
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "blur30",
+      "duration": 90.0,
+      "level": {
+        "label": "motion blur, 1/30 s exposure"
+      },
+      "overrides": {
+        "camera.blur_subframes": 8,
+        "camera.exposure_s": 0.0333
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "drift",
+      "duration": 90.0,
+      "level": {
+        "label": "lighting drift +-15 % (20 s period)"
+      },
+      "overrides": {
+        "lighting.drift_amplitude": 0.15,
+        "lighting.drift_period_s": 20.0
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "drift",
+      "duration": 90.0,
+      "level": {
+        "label": "lighting drift +-15 % (20 s period)"
+      },
+      "overrides": {
+        "lighting.drift_amplitude": 0.15,
+        "lighting.drift_period_s": 20.0
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "drift",
+      "duration": 90.0,
+      "level": {
+        "label": "lighting drift +-15 % (20 s period)"
+      },
+      "overrides": {
+        "lighting.drift_amplitude": 0.15,
+        "lighting.drift_period_s": 20.0
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "jumps",
+      "duration": 90.0,
+      "level": {
+        "label": "exposure jumps (x0.7 at 30 s, x1.4 at 60 s)"
+      },
+      "overrides": {
+        "lighting.jumps": [
+          [
+            30.0,
+            0.7
+          ],
+          [
+            60.0,
+            1.4
+          ]
+        ]
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "jumps",
+      "duration": 90.0,
+      "level": {
+        "label": "exposure jumps (x0.7 at 30 s, x1.4 at 60 s)"
+      },
+      "overrides": {
+        "lighting.jumps": [
+          [
+            30.0,
+            0.7
+          ],
+          [
+            60.0,
+            1.4
+          ]
+        ]
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "jumps",
+      "duration": 90.0,
+      "level": {
+        "label": "exposure jumps (x0.7 at 30 s, x1.4 at 60 s)"
+      },
+      "overrides": {
+        "lighting.jumps": [
+          [
+            30.0,
+            0.7
+          ],
+          [
+            60.0,
+            1.4
+          ]
+        ]
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    },
+    {
+      "cond": "dusk",
+      "duration": 90.0,
+      "level": {
+        "label": "dusk: 45 % light, noise 4"
+      },
+      "overrides": {
+        "camera.noise_sigma": 4.0,
+        "lighting.gain": 0.45,
+        "lighting.shadows": false
+      },
+      "preset": "baseline",
+      "seed": 1101,
+      "site": {}
+    },
+    {
+      "cond": "dusk",
+      "duration": 90.0,
+      "level": {
+        "label": "dusk: 45 % light, noise 4"
+      },
+      "overrides": {
+        "camera.noise_sigma": 4.0,
+        "lighting.gain": 0.45,
+        "lighting.shadows": false
+      },
+      "preset": "baseline",
+      "seed": 1102,
+      "site": {}
+    },
+    {
+      "cond": "dusk",
+      "duration": 90.0,
+      "level": {
+        "label": "dusk: 45 % light, noise 4"
+      },
+      "overrides": {
+        "camera.noise_sigma": 4.0,
+        "lighting.gain": 0.45,
+        "lighting.shadows": false
+      },
+      "preset": "baseline",
+      "seed": 1103,
+      "site": {}
+    }
+  ],
+  "title": "Robustness to imaging conditions"
+}

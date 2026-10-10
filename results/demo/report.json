@@ -1,0 +1,233 @@
+{
+  "calibration": {
+    "click_sigma_px_used": 1.0627,
+    "ground_sigma_m": 0.02,
+    "max_px": 2.1808,
+    "n_points": 9,
+    "rms_m": 0.097,
+    "rms_px": 1.1202
+  },
+  "calibration_scale_sd": 0.0072,
+  "duration_s": 300.0,
+  "groups": {
+    "all": {
+      "flow_veh_h": 480.0,
+      "flow_veh_h_ci": [
+        342.919,
+        653.6238
+      ],
+      "mean_kmh": 65.0021,
+      "mean_kmh_ci": [
+        61.3732,
+        68.6881
+      ],
+      "n": 38,
+      "n_counted": 40,
+      "sd_kmh": 11.3315,
+      "sd_kmh_ci": [
+        8.5976,
+        13.496
+      ],
+      "share_over_limit": 0.9211,
+      "share_over_limit_ci": [
+        0.8158,
+        1.0
+      ],
+      "share_over_limit_plus10": 0.7368,
+      "share_over_limit_plus10_ci": [
+        0.6053,
+        0.8684
+      ],
+      "v50_kmh": 65.6262,
+      "v50_kmh_ci": [
+        62.5606,
+        67.4564
+      ],
+      "v85_kmh": 77.6449,
+      "v85_kmh_ci": [
+        70.1024,
+        82.4926
+      ]
+    },
+    "direction:away": {
+      "flow_veh_h": 264.0,
+      "flow_veh_h_ci": [
+        165.4474,
+        399.6992
+      ],
+      "mean_kmh": 68.7762,
+      "mean_kmh_ci": [
+        64.6759,
+        72.8721
+      ],
+      "n": 20,
+      "n_counted": 22,
+      "sd_kmh": 9.2982,
+      "sd_kmh_ci": [
+        5.9302,
+        11.7432
+      ],
+      "share_over_limit": 0.95,
+      "share_over_limit_ci": [
+        0.85,
+        1.0
+      ],
+      "share_over_limit_plus10": 0.85,
+      "share_over_limit_plus10_ci": [
+        0.7,
+        1.0
+      ],
+      "v50_kmh": 66.8245,
+      "v50_kmh_ci": [
+        65.5266,
+        74.2879
+      ],
+      "v85_kmh": 78.5488,
+      "v85_kmh_ci": [
+        71.8542,
+        81.1155
+      ]
+    },
+    "direction:towards": {
+      "flow_veh_h": 216.0,
+      "flow_veh_h_ci": [
+        128.0153,
+        341.3731
+      ],
+      "mean_kmh": 60.8086,
+      "mean_kmh_ci": [
+        55.3831,
+        66.2284
+      ],
+      "n": 18,
+      "n_counted": 18,
+      "sd_kmh": 12.1433,
+      "sd_kmh_ci": [
+        7.5477,
+        15.6892
+      ],
+      "share_over_limit": 0.8889,
+      "share_over_limit_ci": [
+        0.7222,
+        1.0
+      ],
+      "share_over_limit_plus10": 0.6111,
+      "share_over_limit_plus10_ci": [
+        0.3889,
+        0.8333
+      ],
+      "v50_kmh": 62.0301,
+      "v50_kmh_ci": [
+        54.6041,
+        64.1872
+      ],
+      "v85_kmh": 70.9213,
+      "v85_kmh_ci": [
+        62.9494,
+        84.1446
+      ]
+    },
+    "lane:away-1": {
+      "flow_veh_h": 264.0,
+      "flow_veh_h_ci": [
+        165.4474,
+        399.6992
+      ],
+      "mean_kmh": 68.7762,
+      "mean_kmh_ci": [
+        64.6759,
+        72.8721
+      ],
+      "n": 20,
+      "n_counted": 22,
+      "sd_kmh": 9.2982,
+      "sd_kmh_ci": [
+        5.9302,
+        11.7432
+      ],
+      "share_over_limit": 0.95,
+      "share_over_limit_ci": [
+        0.85,
+        1.0
+      ],
+      "share_over_limit_plus10": 0.85,
+      "share_over_limit_plus10_ci": [
+        0.7,
+        1.0
+      ],
+      "v50_kmh": 66.8245,
+      "v50_kmh_ci": [
+        65.5266,
+        74.2879
+      ],
+      "v85_kmh": 78.5488,
+      "v85_kmh_ci": [
+        71.8542,
+        81.1155
+      ]
+    },
+    "lane:towards-1": {
+      "flow_veh_h": 216.0,
+      "flow_veh_h_ci": [
+        128.0153,
+        341.3731
+      ],
+      "mean_kmh": 60.8086,
+      "mean_kmh_ci": [
+        55.3831,
+        66.2284
+      ],
+      "n": 18,
+      "n_counted": 18,
+      "sd_kmh": 12.1433,
+      "sd_kmh_ci": [
+        7.5477,
+        15.6892
+      ],
+      "share_over_limit": 0.8889,
+      "share_over_limit_ci": [
+        0.7222,
+        1.0
+      ],
+      "share_over_limit_plus10": 0.6111,
+      "share_over_limit_plus10_ci": [
+        0.3889,
+        0.8333
+      ],
+      "v50_kmh": 62.0301,
+      "v50_kmh_ci": [
+        54.6041,
+        64.1872
+      ],
+      "v85_kmh": 70.9213,
+      "v85_kmh_ci": [
+        62.9494,
+        84.1446
+      ]
+    }
+  },
+  "method": {
+    "ci": "95% bootstrap over vehicles x per-vehicle random error x calibration scale draws",
+    "flow_counts": "valid and review records (rejected fragments are not counted)",
+    "included": "valid records and review records accepted by a reviewer",
+    "n_boot": 2000
+  },
+  "records": 49,
+  "review": {
+    "accepted": 0,
+    "pending": 2,
+    "rejected": 0
+  },
+  "site": "synthetic-seed2026",
+  "source": "video.mp4",
+  "speed_limit_kmh": 50.0,
+  "status_counts": {
+    "rejected": 9,
+    "review": 2,
+    "valid": 38
+  },
+  "zone": {
+    "end_m": 50.0,
+    "start_m": 20.0
+  }
+}

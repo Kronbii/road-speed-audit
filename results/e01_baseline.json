@@ -1,0 +1,311 @@
+{
+  "by": {
+    "class": {
+      "bus": {
+        "bias": 0.2863,
+        "mae": 0.2863,
+        "max_abs": 0.4351,
+        "n": 2,
+        "p95_abs": 0.4202,
+        "rmse": 0.3227
+      },
+      "car": {
+        "bias": -0.2259,
+        "bias_ci": [
+          -0.317,
+          -0.1456
+        ],
+        "mae": 0.2982,
+        "max_abs": 2.5825,
+        "n": 82,
+        "p95_abs": 0.7209,
+        "p95_abs_ci": [
+          0.5192,
+          1.8117
+        ],
+        "rmse": 0.4833,
+        "rmse_ci": [
+          0.3098,
+          0.6665
+        ]
+      },
+      "motorcycle": {
+        "bias": -1.0086,
+        "mae": 1.0086,
+        "max_abs": 2.273,
+        "n": 7,
+        "p95_abs": 2.0341,
+        "rmse": 1.2045
+      },
+      "suv": {
+        "bias": -0.0559,
+        "bias_ci": [
+          -0.1433,
+          0.0222
+        ],
+        "mae": 0.1232,
+        "max_abs": 0.4002,
+        "n": 13,
+        "p95_abs": 0.3628,
+        "p95_abs_ci": [
+          0.1179,
+          0.4002
+        ],
+        "rmse": 0.1684,
+        "rmse_ci": [
+          0.0807,
+          0.2352
+        ]
+      },
+      "truck": {
+        "bias": 0.2031,
+        "mae": 0.2031,
+        "max_abs": 0.2299,
+        "n": 3,
+        "p95_abs": 0.2274,
+        "rmse": 0.2043
+      },
+      "van": {
+        "bias": -0.201,
+        "bias_ci": [
+          -0.3847,
+          -0.024
+        ],
+        "mae": 0.2829,
+        "max_abs": 0.9259,
+        "n": 11,
+        "p95_abs": 0.7152,
+        "p95_abs_ci": [
+          0.3034,
+          0.9259
+        ],
+        "rmse": 0.3737,
+        "rmse_ci": [
+          0.1974,
+          0.5438
+        ]
+      }
+    },
+    "direction": {
+      "away": {
+        "bias": -0.1305,
+        "bias_ci": [
+          -0.2058,
+          -0.0604
+        ],
+        "mae": 0.2011,
+        "max_abs": 1.1186,
+        "n": 59,
+        "p95_abs": 0.6807,
+        "p95_abs_ci": [
+          0.4202,
+          0.9452
+        ],
+        "rmse": 0.3083,
+        "rmse_ci": [
+          0.222,
+          0.389
+        ]
+      },
+      "towards": {
+        "bias": -0.333,
+        "bias_ci": [
+          -0.503,
+          -0.1986
+        ],
+        "mae": 0.4329,
+        "max_abs": 2.5825,
+        "n": 59,
+        "p95_abs": 1.5138,
+        "p95_abs_ci": [
+          0.7228,
+          2.304
+        ],
+        "rmse": 0.6631,
+        "rmse_ci": [
+          0.4355,
+          0.8828
+        ]
+      }
+    }
+  },
+  "experiment": "e01_baseline",
+  "flag_counts": {
+    "few_points": 2,
+    "gap": 3,
+    "lane_ambiguous": 4,
+    "mostly_merged": 5,
+    "partial_zone": 10,
+    "split": 33,
+    "stitched": 10,
+    "wide_blob": 1
+  },
+  "jobs": [
+    {
+      "cond": "baseline",
+      "duration": 120.0,
+      "level": {},
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 101,
+      "site": {}
+    },
+    {
+      "cond": "baseline",
+      "duration": 120.0,
+      "level": {},
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 102,
+      "site": {}
+    },
+    {
+      "cond": "baseline",
+      "duration": 120.0,
+      "level": {},
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 103,
+      "site": {}
+    },
+    {
+      "cond": "baseline",
+      "duration": 120.0,
+      "level": {},
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 104,
+      "site": {}
+    },
+    {
+      "cond": "baseline",
+      "duration": 120.0,
+      "level": {},
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 105,
+      "site": {}
+    },
+    {
+      "cond": "baseline",
+      "duration": 120.0,
+      "level": {},
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 106,
+      "site": {}
+    },
+    {
+      "cond": "baseline",
+      "duration": 120.0,
+      "level": {},
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 107,
+      "site": {}
+    },
+    {
+      "cond": "baseline",
+      "duration": 120.0,
+      "level": {},
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 108,
+      "site": {}
+    },
+    {
+      "cond": "baseline",
+      "duration": 120.0,
+      "level": {},
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 109,
+      "site": {}
+    },
+    {
+      "cond": "baseline",
+      "duration": 120.0,
+      "level": {},
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 110,
+      "site": {}
+    }
+  ],
+  "pooled": {
+    "ci95_coverage": 0.9237,
+    "duplicate_valid_records": 0,
+    "error_valid_kmh": {
+      "bias": -0.2317,
+      "bias_ci": [
+        -0.3258,
+        -0.1502
+      ],
+      "mae": 0.317,
+      "max_abs": 2.5825,
+      "n": 118,
+      "p95_abs": 1.0124,
+      "p95_abs_ci": [
+        0.6707,
+        1.8482
+      ],
+      "rmse": 0.5171,
+      "rmse_ci": [
+        0.3612,
+        0.666
+      ]
+    },
+    "failed_runs": 0,
+    "false_valid_records": 0,
+    "geometry": {
+      "focal_px": 1108.5125,
+      "gsd_along_m_per_px": 0.1922,
+      "tilt_deg": 9.5903
+    },
+    "gt_vehicles": 134,
+    "median_u_kmh": 0.4136,
+    "outcomes": {
+      "missed": 0,
+      "rejected_only": 10,
+      "review_only": 6,
+      "valid": 118
+    },
+    "runs": 10,
+    "tracking": {
+      "false_negatives": 2791,
+      "false_positives": 2020,
+      "fragmentations": 134,
+      "gt_boxes": 29155,
+      "id_switches": 29,
+      "mostly_tracked": 111,
+      "mota": 0.834,
+      "trajectories": 134,
+      "zone_fragmentations": 31,
+      "zone_fully_tracked_one_id": 101,
+      "zone_id_switches": 11,
+      "zone_trajectories": 134
+    },
+    "valid_rate": 0.8806
+  },
+  "relative_error_pct": {
+    "bias": -0.3304,
+    "bias_ci": [
+      -0.4536,
+      -0.2159
+    ],
+    "mae": 0.4658,
+    "max_abs": 3.7519,
+    "n": 118,
+    "p95_abs": 1.6254,
+    "p95_abs_ci": [
+      0.9957,
+      2.0203
+    ],
+    "rmse": 0.7183,
+    "rmse_ci": [
+      0.5354,
+      0.9032
+    ]
+  },
+  "title": "Baseline accuracy"
+}

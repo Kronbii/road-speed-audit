@@ -1,0 +1,1179 @@
+{
+  "conditions": [
+    {
+      "ci95_coverage": 1.0,
+      "cond": "2lane_f150",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.1715,
+        "bias_ci": [
+          -0.3503,
+          -0.0073
+        ],
+        "mae": 0.3074,
+        "max_abs": 1.0743,
+        "n": 20,
+        "p95_abs": 0.8932,
+        "p95_abs_ci": [
+          0.4298,
+          1.0743
+        ],
+        "rmse": 0.4208,
+        "rmse_ci": [
+          0.2557,
+          0.5737
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 22,
+      "level": {
+        "flow": 150,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "median_u_kmh": 0.4917,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 2,
+        "review_only": 0,
+        "valid": 20
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 251,
+        "false_positives": 281,
+        "fragmentations": 14,
+        "gt_boxes": 4886,
+        "id_switches": 4,
+        "mostly_tracked": 21,
+        "mota": 0.8903,
+        "trajectories": 22,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 19,
+        "zone_id_switches": 2,
+        "zone_trajectories": 22
+      },
+      "valid_rate": 0.9091,
+      "zone_fragmentations_per_100_veh": 9.0909,
+      "zone_id_switches_per_100_veh": 9.0909
+    },
+    {
+      "ci95_coverage": 1.0,
+      "cond": "2lane_f300",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.115,
+        "bias_ci": [
+          -0.2498,
+          0.0084
+        ],
+        "mae": 0.2755,
+        "max_abs": 1.1367,
+        "n": 31,
+        "p95_abs": 0.6027,
+        "p95_abs_ci": [
+          0.5188,
+          1.1367
+        ],
+        "rmse": 0.3719,
+        "rmse_ci": [
+          0.2533,
+          0.4918
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 36,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "median_u_kmh": 0.4757,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 3,
+        "review_only": 2,
+        "valid": 31
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 648,
+        "false_positives": 599,
+        "fragmentations": 40,
+        "gt_boxes": 7987,
+        "id_switches": 6,
+        "mostly_tracked": 32,
+        "mota": 0.8431,
+        "trajectories": 36,
+        "zone_fragmentations": 9,
+        "zone_fully_tracked_one_id": 27,
+        "zone_id_switches": 2,
+        "zone_trajectories": 36
+      },
+      "valid_rate": 0.8611,
+      "zone_fragmentations_per_100_veh": 25.0,
+      "zone_id_switches_per_100_veh": 5.5556
+    },
+    {
+      "ci95_coverage": 1.0,
+      "cond": "2lane_f500",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0905,
+        "bias_ci": [
+          -0.2016,
+          0.0236
+        ],
+        "mae": 0.2958,
+        "max_abs": 1.1238,
+        "n": 39,
+        "p95_abs": 0.8186,
+        "p95_abs_ci": [
+          0.5165,
+          1.1238
+        ],
+        "rmse": 0.3922,
+        "rmse_ci": [
+          0.2858,
+          0.4781
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 40,
+      "level": {
+        "flow": 500,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "median_u_kmh": 0.4708,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 1,
+        "valid": 39
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 1105,
+        "false_positives": 782,
+        "fragmentations": 74,
+        "gt_boxes": 9013,
+        "id_switches": 2,
+        "mostly_tracked": 35,
+        "mota": 0.7904,
+        "trajectories": 40,
+        "zone_fragmentations": 5,
+        "zone_fully_tracked_one_id": 34,
+        "zone_id_switches": 0,
+        "zone_trajectories": 40
+      },
+      "valid_rate": 0.975,
+      "zone_fragmentations_per_100_veh": 12.5,
+      "zone_id_switches_per_100_veh": 0.0
+    },
+    {
+      "ci95_coverage": 1.0,
+      "cond": "2lane_f700",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.1138,
+        "bias_ci": [
+          -0.2498,
+          0.0058
+        ],
+        "mae": 0.3197,
+        "max_abs": 1.1185,
+        "n": 35,
+        "p95_abs": 0.8624,
+        "p95_abs_ci": [
+          0.5452,
+          1.1185
+        ],
+        "rmse": 0.4213,
+        "rmse_ci": [
+          0.3157,
+          0.5215
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 39,
+      "level": {
+        "flow": 700,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "median_u_kmh": 0.4559,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 1,
+        "review_only": 3,
+        "valid": 35
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 858,
+        "false_positives": 658,
+        "fragmentations": 46,
+        "gt_boxes": 8710,
+        "id_switches": 7,
+        "mostly_tracked": 33,
+        "mota": 0.8251,
+        "trajectories": 39,
+        "zone_fragmentations": 5,
+        "zone_fully_tracked_one_id": 32,
+        "zone_id_switches": 0,
+        "zone_trajectories": 39
+      },
+      "valid_rate": 0.8974,
+      "zone_fragmentations_per_100_veh": 12.8205,
+      "zone_id_switches_per_100_veh": 0.0
+    },
+    {
+      "ci95_coverage": 0.9508,
+      "cond": "4lane_f300",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.2636,
+        "bias_ci": [
+          -0.3669,
+          -0.1586
+        ],
+        "mae": 0.3817,
+        "max_abs": 1.534,
+        "n": 61,
+        "p95_abs": 0.9542,
+        "p95_abs_ci": [
+          0.7447,
+          1.1369
+        ],
+        "rmse": 0.4963,
+        "rmse_ci": [
+          0.4002,
+          0.5963
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1961,
+        "tilt_deg": 9.3941
+      },
+      "gt_vehicles": 66,
+      "level": {
+        "flow": 300,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "median_u_kmh": 0.4945,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 2,
+        "review_only": 3,
+        "valid": 61
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 1678,
+        "false_positives": 926,
+        "fragmentations": 88,
+        "gt_boxes": 13685,
+        "id_switches": 20,
+        "mostly_tracked": 53,
+        "mota": 0.8083,
+        "trajectories": 66,
+        "zone_fragmentations": 11,
+        "zone_fully_tracked_one_id": 53,
+        "zone_id_switches": 3,
+        "zone_trajectories": 66
+      },
+      "valid_rate": 0.9242,
+      "zone_fragmentations_per_100_veh": 16.6667,
+      "zone_id_switches_per_100_veh": 4.5455
+    },
+    {
+      "ci95_coverage": 0.9853,
+      "cond": "4lane_f450",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.2214,
+        "bias_ci": [
+          -0.3104,
+          -0.1336
+        ],
+        "mae": 0.3477,
+        "max_abs": 1.4764,
+        "n": 68,
+        "p95_abs": 0.9248,
+        "p95_abs_ci": [
+          0.6767,
+          1.0212
+        ],
+        "rmse": 0.4528,
+        "rmse_ci": [
+          0.3672,
+          0.537
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1961,
+        "tilt_deg": 9.3941
+      },
+      "gt_vehicles": 77,
+      "level": {
+        "flow": 450,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "median_u_kmh": 0.4873,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 6,
+        "review_only": 3,
+        "valid": 68
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 2259,
+        "false_positives": 1089,
+        "fragmentations": 126,
+        "gt_boxes": 16040,
+        "id_switches": 29,
+        "mostly_tracked": 55,
+        "mota": 0.7895,
+        "trajectories": 77,
+        "zone_fragmentations": 16,
+        "zone_fully_tracked_one_id": 54,
+        "zone_id_switches": 4,
+        "zone_trajectories": 77
+      },
+      "valid_rate": 0.8831,
+      "zone_fragmentations_per_100_veh": 20.7792,
+      "zone_id_switches_per_100_veh": 5.1948
+    },
+    {
+      "ci95_coverage": 0.9701,
+      "cond": "4lane_f600",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.2757,
+        "bias_ci": [
+          -0.3737,
+          -0.1896
+        ],
+        "mae": 0.3506,
+        "max_abs": 1.5791,
+        "n": 67,
+        "p95_abs": 0.9555,
+        "p95_abs_ci": [
+          0.7429,
+          1.02
+        ],
+        "rmse": 0.4694,
+        "rmse_ci": [
+          0.3779,
+          0.5714
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1961,
+        "tilt_deg": 9.3941
+      },
+      "gt_vehicles": 81,
+      "level": {
+        "flow": 600,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "median_u_kmh": 0.4784,
+      "outcomes": {
+        "missed": 3,
+        "rejected_only": 4,
+        "review_only": 7,
+        "valid": 67
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 2989,
+        "false_positives": 1459,
+        "fragmentations": 182,
+        "gt_boxes": 17383,
+        "id_switches": 29,
+        "mostly_tracked": 54,
+        "mota": 0.7424,
+        "trajectories": 81,
+        "zone_fragmentations": 19,
+        "zone_fully_tracked_one_id": 57,
+        "zone_id_switches": 5,
+        "zone_trajectories": 81
+      },
+      "valid_rate": 0.8272,
+      "zone_fragmentations_per_100_veh": 23.4568,
+      "zone_id_switches_per_100_veh": 6.1728
+    },
+    {
+      "ci95_coverage": 0.7778,
+      "cond": "2lane_pole",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.6203,
+        "bias_ci": [
+          -0.8816,
+          -0.3856
+        ],
+        "mae": 0.6203,
+        "max_abs": 2.0251,
+        "n": 18,
+        "p95_abs": 1.5169,
+        "p95_abs_ci": [
+          0.931,
+          2.0251
+        ],
+        "rmse": 0.8222,
+        "rmse_ci": [
+          0.5331,
+          1.0864
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 36,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "lamp post"
+      },
+      "median_u_kmh": 0.5345,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 15,
+        "review_only": 3,
+        "valid": 18
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 741,
+        "false_positives": 1259,
+        "fragmentations": 67,
+        "gt_boxes": 7882,
+        "id_switches": 36,
+        "mostly_tracked": 31,
+        "mota": 0.7417,
+        "trajectories": 36,
+        "zone_fragmentations": 18,
+        "zone_fully_tracked_one_id": 16,
+        "zone_id_switches": 16,
+        "zone_trajectories": 36
+      },
+      "valid_rate": 0.5,
+      "zone_fragmentations_per_100_veh": 50.0,
+      "zone_id_switches_per_100_veh": 44.4444
+    },
+    {
+      "ci95_coverage": 0.7368,
+      "cond": "2lane_pole_noocc",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.7518,
+        "bias_ci": [
+          -1.0364,
+          -0.4776
+        ],
+        "mae": 0.7518,
+        "max_abs": 2.1033,
+        "n": 19,
+        "p95_abs": 2.0008,
+        "p95_abs_ci": [
+          1.0815,
+          2.1033
+        ],
+        "rmse": 0.9997,
+        "rmse_ci": [
+          0.66,
+          1.2837
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 36,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "lamp post, no occlusion handling"
+      },
+      "median_u_kmh": 0.5051,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 16,
+        "review_only": 1,
+        "valid": 19
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 890,
+        "false_positives": 1404,
+        "fragmentations": 73,
+        "gt_boxes": 7882,
+        "id_switches": 46,
+        "mostly_tracked": 30,
+        "mota": 0.7031,
+        "trajectories": 36,
+        "zone_fragmentations": 19,
+        "zone_fully_tracked_one_id": 17,
+        "zone_id_switches": 19,
+        "zone_trajectories": 36
+      },
+      "valid_rate": 0.5278,
+      "zone_fragmentations_per_100_veh": 52.7778,
+      "zone_id_switches_per_100_veh": 52.7778
+    },
+    {
+      "ci95_coverage": 0.9697,
+      "cond": "4lane_f450_noocc",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.2501,
+        "bias_ci": [
+          -0.3409,
+          -0.166
+        ],
+        "mae": 0.3474,
+        "max_abs": 1.4764,
+        "n": 66,
+        "p95_abs": 0.9627,
+        "p95_abs_ci": [
+          0.6767,
+          0.9978
+        ],
+        "rmse": 0.4532,
+        "rmse_ci": [
+          0.3677,
+          0.5446
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1961,
+        "tilt_deg": 9.3941
+      },
+      "gt_vehicles": 77,
+      "level": {
+        "flow": 450,
+        "road": "4-lane",
+        "variant": "no occlusion handling"
+      },
+      "median_u_kmh": 0.4873,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 9,
+        "review_only": 2,
+        "valid": 66
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 2552,
+        "false_positives": 1537,
+        "fragmentations": 161,
+        "gt_boxes": 16040,
+        "id_switches": 43,
+        "mostly_tracked": 51,
+        "mota": 0.7424,
+        "trajectories": 77,
+        "zone_fragmentations": 21,
+        "zone_fully_tracked_one_id": 56,
+        "zone_id_switches": 6,
+        "zone_trajectories": 77
+      },
+      "valid_rate": 0.8571,
+      "zone_fragmentations_per_100_veh": 27.2727,
+      "zone_id_switches_per_100_veh": 7.7922
+    }
+  ],
+  "experiment": "e08_density",
+  "jobs": [
+    {
+      "cond": "2lane_f150",
+      "duration": 90.0,
+      "level": {
+        "flow": 150,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 150.0
+      },
+      "preset": "baseline",
+      "seed": 801,
+      "site": {}
+    },
+    {
+      "cond": "2lane_f150",
+      "duration": 90.0,
+      "level": {
+        "flow": 150,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 150.0
+      },
+      "preset": "baseline",
+      "seed": 802,
+      "site": {}
+    },
+    {
+      "cond": "2lane_f150",
+      "duration": 90.0,
+      "level": {
+        "flow": 150,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 150.0
+      },
+      "preset": "baseline",
+      "seed": 803,
+      "site": {}
+    },
+    {
+      "cond": "2lane_f300",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 300.0
+      },
+      "preset": "baseline",
+      "seed": 801,
+      "site": {}
+    },
+    {
+      "cond": "2lane_f300",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 300.0
+      },
+      "preset": "baseline",
+      "seed": 802,
+      "site": {}
+    },
+    {
+      "cond": "2lane_f300",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 300.0
+      },
+      "preset": "baseline",
+      "seed": 803,
+      "site": {}
+    },
+    {
+      "cond": "2lane_f500",
+      "duration": 90.0,
+      "level": {
+        "flow": 500,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 500.0
+      },
+      "preset": "baseline",
+      "seed": 801,
+      "site": {}
+    },
+    {
+      "cond": "2lane_f500",
+      "duration": 90.0,
+      "level": {
+        "flow": 500,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 500.0
+      },
+      "preset": "baseline",
+      "seed": 802,
+      "site": {}
+    },
+    {
+      "cond": "2lane_f500",
+      "duration": 90.0,
+      "level": {
+        "flow": 500,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 500.0
+      },
+      "preset": "baseline",
+      "seed": 803,
+      "site": {}
+    },
+    {
+      "cond": "2lane_f700",
+      "duration": 90.0,
+      "level": {
+        "flow": 700,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 700.0
+      },
+      "preset": "baseline",
+      "seed": 801,
+      "site": {}
+    },
+    {
+      "cond": "2lane_f700",
+      "duration": 90.0,
+      "level": {
+        "flow": 700,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 700.0
+      },
+      "preset": "baseline",
+      "seed": 802,
+      "site": {}
+    },
+    {
+      "cond": "2lane_f700",
+      "duration": 90.0,
+      "level": {
+        "flow": 700,
+        "road": "2-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "traffic.flow_veh_h_per_lane": 700.0
+      },
+      "preset": "baseline",
+      "seed": 803,
+      "site": {}
+    },
+    {
+      "cond": "4lane_f300",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 300.0
+      },
+      "preset": "baseline",
+      "seed": 801,
+      "site": {}
+    },
+    {
+      "cond": "4lane_f300",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 300.0
+      },
+      "preset": "baseline",
+      "seed": 802,
+      "site": {}
+    },
+    {
+      "cond": "4lane_f300",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 300.0
+      },
+      "preset": "baseline",
+      "seed": 803,
+      "site": {}
+    },
+    {
+      "cond": "4lane_f450",
+      "duration": 90.0,
+      "level": {
+        "flow": 450,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 450.0
+      },
+      "preset": "baseline",
+      "seed": 801,
+      "site": {}
+    },
+    {
+      "cond": "4lane_f450",
+      "duration": 90.0,
+      "level": {
+        "flow": 450,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 450.0
+      },
+      "preset": "baseline",
+      "seed": 802,
+      "site": {}
+    },
+    {
+      "cond": "4lane_f450",
+      "duration": 90.0,
+      "level": {
+        "flow": 450,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 450.0
+      },
+      "preset": "baseline",
+      "seed": 803,
+      "site": {}
+    },
+    {
+      "cond": "4lane_f600",
+      "duration": 90.0,
+      "level": {
+        "flow": 600,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 600.0
+      },
+      "preset": "baseline",
+      "seed": 801,
+      "site": {}
+    },
+    {
+      "cond": "4lane_f600",
+      "duration": 90.0,
+      "level": {
+        "flow": 600,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 600.0
+      },
+      "preset": "baseline",
+      "seed": 802,
+      "site": {}
+    },
+    {
+      "cond": "4lane_f600",
+      "duration": 90.0,
+      "level": {
+        "flow": 600,
+        "road": "4-lane",
+        "variant": "default"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 600.0
+      },
+      "preset": "baseline",
+      "seed": 803,
+      "site": {}
+    },
+    {
+      "cond": "2lane_pole",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "lamp post"
+      },
+      "overrides": {
+        "occluders": [
+          {
+            "d": 0.35,
+            "h": 8.0,
+            "w": 0.35,
+            "x": 4.06,
+            "y": 8.75
+          }
+        ]
+      },
+      "preset": "baseline",
+      "seed": 801,
+      "site": {}
+    },
+    {
+      "cond": "2lane_pole",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "lamp post"
+      },
+      "overrides": {
+        "occluders": [
+          {
+            "d": 0.35,
+            "h": 8.0,
+            "w": 0.35,
+            "x": 4.06,
+            "y": 8.75
+          }
+        ]
+      },
+      "preset": "baseline",
+      "seed": 802,
+      "site": {}
+    },
+    {
+      "cond": "2lane_pole",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "lamp post"
+      },
+      "overrides": {
+        "occluders": [
+          {
+            "d": 0.35,
+            "h": 8.0,
+            "w": 0.35,
+            "x": 4.06,
+            "y": 8.75
+          }
+        ]
+      },
+      "preset": "baseline",
+      "seed": 803,
+      "site": {}
+    },
+    {
+      "cond": "2lane_pole_noocc",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "lamp post, no occlusion handling"
+      },
+      "overrides": {
+        "occluders": [
+          {
+            "d": 0.35,
+            "h": 8.0,
+            "w": 0.35,
+            "x": 4.06,
+            "y": 8.75
+          }
+        ]
+      },
+      "preset": "baseline",
+      "seed": 801,
+      "site": {
+        "tracker": {
+          "handle_merges": false,
+          "max_lost_s": 0.1
+        }
+      }
+    },
+    {
+      "cond": "2lane_pole_noocc",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "lamp post, no occlusion handling"
+      },
+      "overrides": {
+        "occluders": [
+          {
+            "d": 0.35,
+            "h": 8.0,
+            "w": 0.35,
+            "x": 4.06,
+            "y": 8.75
+          }
+        ]
+      },
+      "preset": "baseline",
+      "seed": 802,
+      "site": {
+        "tracker": {
+          "handle_merges": false,
+          "max_lost_s": 0.1
+        }
+      }
+    },
+    {
+      "cond": "2lane_pole_noocc",
+      "duration": 90.0,
+      "level": {
+        "flow": 300,
+        "road": "2-lane",
+        "variant": "lamp post, no occlusion handling"
+      },
+      "overrides": {
+        "occluders": [
+          {
+            "d": 0.35,
+            "h": 8.0,
+            "w": 0.35,
+            "x": 4.06,
+            "y": 8.75
+          }
+        ]
+      },
+      "preset": "baseline",
+      "seed": 803,
+      "site": {
+        "tracker": {
+          "handle_merges": false,
+          "max_lost_s": 0.1
+        }
+      }
+    },
+    {
+      "cond": "4lane_f450_noocc",
+      "duration": 90.0,
+      "level": {
+        "flow": 450,
+        "road": "4-lane",
+        "variant": "no occlusion handling"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 450.0
+      },
+      "preset": "baseline",
+      "seed": 801,
+      "site": {
+        "tracker": {
+          "handle_merges": false,
+          "max_lost_s": 0.1
+        }
+      }
+    },
+    {
+      "cond": "4lane_f450_noocc",
+      "duration": 90.0,
+      "level": {
+        "flow": 450,
+        "road": "4-lane",
+        "variant": "no occlusion handling"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 450.0
+      },
+      "preset": "baseline",
+      "seed": 802,
+      "site": {
+        "tracker": {
+          "handle_merges": false,
+          "max_lost_s": 0.1
+        }
+      }
+    },
+    {
+      "cond": "4lane_f450_noocc",
+      "duration": 90.0,
+      "level": {
+        "flow": 450,
+        "road": "4-lane",
+        "variant": "no occlusion handling"
+      },
+      "overrides": {
+        "road.lanes_per_direction": 2,
+        "traffic.flow_veh_h_per_lane": 450.0
+      },
+      "preset": "baseline",
+      "seed": 803,
+      "site": {
+        "tracker": {
+          "handle_merges": false,
+          "max_lost_s": 0.1
+        }
+      }
+    }
+  ],
+  "note": "flow per lane in veh/h; 'no occlusion handling' = tracks dropped after 0.1 s and no merged-blob logic",
+  "title": "Traffic density, occlusion and tracker ablations"
+}

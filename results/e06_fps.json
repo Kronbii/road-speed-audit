@@ -1,0 +1,675 @@
+{
+  "conditions": [
+    {
+      "ci95_coverage": 0.973,
+      "cond": "fps10",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0919,
+        "bias_ci": [
+          -0.2618,
+          0.0637
+        ],
+        "mae": 0.3192,
+        "max_abs": 1.9525,
+        "n": 37,
+        "p95_abs": 0.9777,
+        "p95_abs_ci": [
+          0.6192,
+          1.9525
+        ],
+        "rmse": 0.5073,
+        "rmse_ci": [
+          0.3064,
+          0.6929
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 40,
+      "level": {
+        "fps": 10.0
+      },
+      "median_u_kmh": 0.5191,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 2,
+        "review_only": 1,
+        "valid": 37
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 196,
+        "false_positives": 187,
+        "fragmentations": 18,
+        "gt_boxes": 2757,
+        "id_switches": 9,
+        "mostly_tracked": 35,
+        "mota": 0.8578,
+        "trajectories": 40,
+        "zone_fragmentations": 0,
+        "zone_fully_tracked_one_id": 37,
+        "zone_id_switches": 0,
+        "zone_trajectories": 40
+      },
+      "valid_rate": 0.925
+    },
+    {
+      "ci95_coverage": 0.9737,
+      "cond": "fps15",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0953,
+        "bias_ci": [
+          -0.2583,
+          0.0585
+        ],
+        "mae": 0.314,
+        "max_abs": 1.7273,
+        "n": 38,
+        "p95_abs": 0.9322,
+        "p95_abs_ci": [
+          0.5867,
+          1.7273
+        ],
+        "rmse": 0.4738,
+        "rmse_ci": [
+          0.311,
+          0.6491
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 40,
+      "level": {
+        "fps": 15.0
+      },
+      "median_u_kmh": 0.5187,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 1,
+        "review_only": 1,
+        "valid": 38
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 255,
+        "false_positives": 230,
+        "fragmentations": 18,
+        "gt_boxes": 4128,
+        "id_switches": 6,
+        "mostly_tracked": 36,
+        "mota": 0.8811,
+        "trajectories": 40,
+        "zone_fragmentations": 0,
+        "zone_fully_tracked_one_id": 37,
+        "zone_id_switches": 0,
+        "zone_trajectories": 40
+      },
+      "valid_rate": 0.95
+    },
+    {
+      "ci95_coverage": 0.973,
+      "cond": "fps20",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0858,
+        "bias_ci": [
+          -0.2449,
+          0.0581
+        ],
+        "mae": 0.3109,
+        "max_abs": 1.634,
+        "n": 37,
+        "p95_abs": 0.9358,
+        "p95_abs_ci": [
+          0.597,
+          1.634
+        ],
+        "rmse": 0.4688,
+        "rmse_ci": [
+          0.2949,
+          0.6181
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 40,
+      "level": {
+        "fps": 20.0
+      },
+      "median_u_kmh": 0.5055,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 2,
+        "review_only": 1,
+        "valid": 37
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 325,
+        "false_positives": 296,
+        "fragmentations": 27,
+        "gt_boxes": 5501,
+        "id_switches": 7,
+        "mostly_tracked": 36,
+        "mota": 0.8858,
+        "trajectories": 40,
+        "zone_fragmentations": 0,
+        "zone_fully_tracked_one_id": 36,
+        "zone_id_switches": 0,
+        "zone_trajectories": 40
+      },
+      "valid_rate": 0.925
+    },
+    {
+      "ci95_coverage": 0.9737,
+      "cond": "fps25",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0941,
+        "bias_ci": [
+          -0.2517,
+          0.054
+        ],
+        "mae": 0.3128,
+        "max_abs": 1.688,
+        "n": 38,
+        "p95_abs": 0.9604,
+        "p95_abs_ci": [
+          0.5393,
+          1.688
+        ],
+        "rmse": 0.4673,
+        "rmse_ci": [
+          0.3054,
+          0.6363
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 40,
+      "level": {
+        "fps": 25.0
+      },
+      "median_u_kmh": 0.5093,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 1,
+        "review_only": 1,
+        "valid": 38
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 406,
+        "false_positives": 387,
+        "fragmentations": 30,
+        "gt_boxes": 6886,
+        "id_switches": 7,
+        "mostly_tracked": 36,
+        "mota": 0.8838,
+        "trajectories": 40,
+        "zone_fragmentations": 1,
+        "zone_fully_tracked_one_id": 35,
+        "zone_id_switches": 0,
+        "zone_trajectories": 40
+      },
+      "valid_rate": 0.95
+    },
+    {
+      "ci95_coverage": 0.9737,
+      "cond": "fps30",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0956,
+        "bias_ci": [
+          -0.2658,
+          0.0633
+        ],
+        "mae": 0.3325,
+        "max_abs": 1.8911,
+        "n": 38,
+        "p95_abs": 0.9307,
+        "p95_abs_ci": [
+          0.5591,
+          1.8911
+        ],
+        "rmse": 0.4966,
+        "rmse_ci": [
+          0.3157,
+          0.693
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 40,
+      "level": {
+        "fps": 30.0
+      },
+      "median_u_kmh": 0.5029,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 2,
+        "review_only": 0,
+        "valid": 38
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 530,
+        "false_positives": 447,
+        "fragmentations": 28,
+        "gt_boxes": 8255,
+        "id_switches": 6,
+        "mostly_tracked": 36,
+        "mota": 0.8809,
+        "trajectories": 40,
+        "zone_fragmentations": 1,
+        "zone_fully_tracked_one_id": 35,
+        "zone_id_switches": 1,
+        "zone_trajectories": 40
+      },
+      "valid_rate": 0.95
+    },
+    {
+      "ci95_coverage": 0.9737,
+      "cond": "fps50",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0845,
+        "bias_ci": [
+          -0.2481,
+          0.0718
+        ],
+        "mae": 0.3324,
+        "max_abs": 1.7873,
+        "n": 38,
+        "p95_abs": 0.9565,
+        "p95_abs_ci": [
+          0.5574,
+          1.7873
+        ],
+        "rmse": 0.4903,
+        "rmse_ci": [
+          0.3238,
+          0.6729
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 40,
+      "level": {
+        "fps": 50.0
+      },
+      "median_u_kmh": 0.5052,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 2,
+        "review_only": 0,
+        "valid": 38
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 924,
+        "false_positives": 549,
+        "fragmentations": 33,
+        "gt_boxes": 13763,
+        "id_switches": 6,
+        "mostly_tracked": 36,
+        "mota": 0.8925,
+        "trajectories": 40,
+        "zone_fragmentations": 1,
+        "zone_fully_tracked_one_id": 35,
+        "zone_id_switches": 1,
+        "zone_trajectories": 40
+      },
+      "valid_rate": 0.95
+    }
+  ],
+  "experiment": "e06_fps",
+  "jobs": [
+    {
+      "cond": "fps10",
+      "duration": 90.0,
+      "level": {
+        "fps": 10.0
+      },
+      "overrides": {
+        "camera.fps": 10.0
+      },
+      "preset": "baseline",
+      "seed": 601,
+      "site": {}
+    },
+    {
+      "cond": "fps10",
+      "duration": 90.0,
+      "level": {
+        "fps": 10.0
+      },
+      "overrides": {
+        "camera.fps": 10.0
+      },
+      "preset": "baseline",
+      "seed": 602,
+      "site": {}
+    },
+    {
+      "cond": "fps10",
+      "duration": 90.0,
+      "level": {
+        "fps": 10.0
+      },
+      "overrides": {
+        "camera.fps": 10.0
+      },
+      "preset": "baseline",
+      "seed": 603,
+      "site": {}
+    },
+    {
+      "cond": "fps10",
+      "duration": 90.0,
+      "level": {
+        "fps": 10.0
+      },
+      "overrides": {
+        "camera.fps": 10.0
+      },
+      "preset": "baseline",
+      "seed": 604,
+      "site": {}
+    },
+    {
+      "cond": "fps15",
+      "duration": 90.0,
+      "level": {
+        "fps": 15.0
+      },
+      "overrides": {
+        "camera.fps": 15.0
+      },
+      "preset": "baseline",
+      "seed": 601,
+      "site": {}
+    },
+    {
+      "cond": "fps15",
+      "duration": 90.0,
+      "level": {
+        "fps": 15.0
+      },
+      "overrides": {
+        "camera.fps": 15.0
+      },
+      "preset": "baseline",
+      "seed": 602,
+      "site": {}
+    },
+    {
+      "cond": "fps15",
+      "duration": 90.0,
+      "level": {
+        "fps": 15.0
+      },
+      "overrides": {
+        "camera.fps": 15.0
+      },
+      "preset": "baseline",
+      "seed": 603,
+      "site": {}
+    },
+    {
+      "cond": "fps15",
+      "duration": 90.0,
+      "level": {
+        "fps": 15.0
+      },
+      "overrides": {
+        "camera.fps": 15.0
+      },
+      "preset": "baseline",
+      "seed": 604,
+      "site": {}
+    },
+    {
+      "cond": "fps20",
+      "duration": 90.0,
+      "level": {
+        "fps": 20.0
+      },
+      "overrides": {
+        "camera.fps": 20.0
+      },
+      "preset": "baseline",
+      "seed": 601,
+      "site": {}
+    },
+    {
+      "cond": "fps20",
+      "duration": 90.0,
+      "level": {
+        "fps": 20.0
+      },
+      "overrides": {
+        "camera.fps": 20.0
+      },
+      "preset": "baseline",
+      "seed": 602,
+      "site": {}
+    },
+    {
+      "cond": "fps20",
+      "duration": 90.0,
+      "level": {
+        "fps": 20.0
+      },
+      "overrides": {
+        "camera.fps": 20.0
+      },
+      "preset": "baseline",
+      "seed": 603,
+      "site": {}
+    },
+    {
+      "cond": "fps20",
+      "duration": 90.0,
+      "level": {
+        "fps": 20.0
+      },
+      "overrides": {
+        "camera.fps": 20.0
+      },
+      "preset": "baseline",
+      "seed": 604,
+      "site": {}
+    },
+    {
+      "cond": "fps25",
+      "duration": 90.0,
+      "level": {
+        "fps": 25.0
+      },
+      "overrides": {
+        "camera.fps": 25.0
+      },
+      "preset": "baseline",
+      "seed": 601,
+      "site": {}
+    },
+    {
+      "cond": "fps25",
+      "duration": 90.0,
+      "level": {
+        "fps": 25.0
+      },
+      "overrides": {
+        "camera.fps": 25.0
+      },
+      "preset": "baseline",
+      "seed": 602,
+      "site": {}
+    },
+    {
+      "cond": "fps25",
+      "duration": 90.0,
+      "level": {
+        "fps": 25.0
+      },
+      "overrides": {
+        "camera.fps": 25.0
+      },
+      "preset": "baseline",
+      "seed": 603,
+      "site": {}
+    },
+    {
+      "cond": "fps25",
+      "duration": 90.0,
+      "level": {
+        "fps": 25.0
+      },
+      "overrides": {
+        "camera.fps": 25.0
+      },
+      "preset": "baseline",
+      "seed": 604,
+      "site": {}
+    },
+    {
+      "cond": "fps30",
+      "duration": 90.0,
+      "level": {
+        "fps": 30.0
+      },
+      "overrides": {
+        "camera.fps": 30.0
+      },
+      "preset": "baseline",
+      "seed": 601,
+      "site": {}
+    },
+    {
+      "cond": "fps30",
+      "duration": 90.0,
+      "level": {
+        "fps": 30.0
+      },
+      "overrides": {
+        "camera.fps": 30.0
+      },
+      "preset": "baseline",
+      "seed": 602,
+      "site": {}
+    },
+    {
+      "cond": "fps30",
+      "duration": 90.0,
+      "level": {
+        "fps": 30.0
+      },
+      "overrides": {
+        "camera.fps": 30.0
+      },
+      "preset": "baseline",
+      "seed": 603,
+      "site": {}
+    },
+    {
+      "cond": "fps30",
+      "duration": 90.0,
+      "level": {
+        "fps": 30.0
+      },
+      "overrides": {
+        "camera.fps": 30.0
+      },
+      "preset": "baseline",
+      "seed": 604,
+      "site": {}
+    },
+    {
+      "cond": "fps50",
+      "duration": 90.0,
+      "level": {
+        "fps": 50.0
+      },
+      "overrides": {
+        "camera.fps": 50.0
+      },
+      "preset": "baseline",
+      "seed": 601,
+      "site": {}
+    },
+    {
+      "cond": "fps50",
+      "duration": 90.0,
+      "level": {
+        "fps": 50.0
+      },
+      "overrides": {
+        "camera.fps": 50.0
+      },
+      "preset": "baseline",
+      "seed": 602,
+      "site": {}
+    },
+    {
+      "cond": "fps50",
+      "duration": 90.0,
+      "level": {
+        "fps": 50.0
+      },
+      "overrides": {
+        "camera.fps": 50.0
+      },
+      "preset": "baseline",
+      "seed": 603,
+      "site": {}
+    },
+    {
+      "cond": "fps50",
+      "duration": 90.0,
+      "level": {
+        "fps": 50.0
+      },
+      "overrides": {
+        "camera.fps": 50.0
+      },
+      "preset": "baseline",
+      "seed": 604,
+      "site": {}
+    }
+  ],
+  "note": "6 m pole, zone 20-50 m, 1280x720",
+  "title": "Error vs frame rate"
+}

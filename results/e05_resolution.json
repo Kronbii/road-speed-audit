@@ -1,0 +1,802 @@
+{
+  "conditions": [
+    {
+      "ci95_coverage": 1.0,
+      "cond": "hfov30",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0546,
+        "bias_ci": [
+          -0.1874,
+          0.072
+        ],
+        "mae": 0.2898,
+        "max_abs": 1.0016,
+        "n": 30,
+        "p95_abs": 0.9481,
+        "p95_abs_ci": [
+          0.3919,
+          1.0016
+        ],
+        "rmse": 0.385,
+        "rmse_ci": [
+          0.2513,
+          0.5144
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 2388.5125,
+        "gsd_along_m_per_px": 0.2148,
+        "tilt_deg": 6.1894
+      },
+      "gt_vehicles": 31,
+      "level": {
+        "hfov_deg": 30.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "median_u_kmh": 0.5435,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 1,
+        "valid": 30
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 742,
+        "false_positives": 640,
+        "fragmentations": 17,
+        "gt_boxes": 7592,
+        "id_switches": 3,
+        "mostly_tracked": 28,
+        "mota": 0.8176,
+        "trajectories": 31,
+        "zone_fragmentations": 1,
+        "zone_fully_tracked_one_id": 29,
+        "zone_id_switches": 0,
+        "zone_trajectories": 31
+      },
+      "valid_rate": 0.9677
+    },
+    {
+      "ci95_coverage": 1.0,
+      "cond": "hfov45",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.4762,
+        "bias_ci": [
+          -0.6619,
+          -0.3098
+        ],
+        "mae": 0.5439,
+        "max_abs": 1.7042,
+        "n": 30,
+        "p95_abs": 1.2975,
+        "p95_abs_ci": [
+          0.9656,
+          1.7042
+        ],
+        "rmse": 0.6854,
+        "rmse_ci": [
+          0.5091,
+          0.866
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 1,
+      "geometry": {
+        "focal_px": 1545.0967,
+        "gsd_along_m_per_px": 0.3321,
+        "tilt_deg": 6.1894
+      },
+      "gt_vehicles": 31,
+      "level": {
+        "hfov_deg": 45.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "median_u_kmh": 0.5862,
+      "outcomes": {
+        "missed": 1,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 30
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 1049,
+        "false_positives": 490,
+        "fragmentations": 40,
+        "gt_boxes": 7662,
+        "id_switches": 2,
+        "mostly_tracked": 24,
+        "mota": 0.7989,
+        "trajectories": 31,
+        "zone_fragmentations": 1,
+        "zone_fully_tracked_one_id": 27,
+        "zone_id_switches": 1,
+        "zone_trajectories": 31
+      },
+      "valid_rate": 0.9677
+    },
+    {
+      "ci95_coverage": 0.6667,
+      "cond": "hfov60",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.9567,
+        "bias_ci": [
+          -1.354,
+          -0.6131
+        ],
+        "mae": 1.0669,
+        "max_abs": 3.9033,
+        "n": 27,
+        "p95_abs": 2.1843,
+        "p95_abs_ci": [
+          1.5789,
+          3.9033
+        ],
+        "rmse": 1.3424,
+        "rmse_ci": [
+          0.9428,
+          1.7674
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 1,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.4629,
+        "tilt_deg": 6.1894
+      },
+      "gt_vehicles": 31,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "median_u_kmh": 0.8378,
+      "outcomes": {
+        "missed": 1,
+        "rejected_only": 3,
+        "review_only": 0,
+        "valid": 27
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 1734,
+        "false_positives": 498,
+        "fragmentations": 27,
+        "gt_boxes": 7662,
+        "id_switches": 2,
+        "mostly_tracked": 18,
+        "mota": 0.7084,
+        "trajectories": 31,
+        "zone_fragmentations": 1,
+        "zone_fully_tracked_one_id": 23,
+        "zone_id_switches": 1,
+        "zone_trajectories": 31
+      },
+      "valid_rate": 0.871
+    },
+    {
+      "ci95_coverage": 0.5,
+      "cond": "hfov75",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -2.0549,
+        "bias_ci": [
+          -2.8578,
+          -1.3468
+        ],
+        "mae": 2.1459,
+        "max_abs": 7.2566,
+        "n": 20,
+        "p95_abs": 4.0203,
+        "p95_abs_ci": [
+          3.3422,
+          7.2566
+        ],
+        "rmse": 2.6795,
+        "rmse_ci": [
+          1.8146,
+          3.626
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 834.0642,
+        "gsd_along_m_per_px": 0.6152,
+        "tilt_deg": 6.1894
+      },
+      "gt_vehicles": 31,
+      "level": {
+        "hfov_deg": 75.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "median_u_kmh": 1.1486,
+      "outcomes": {
+        "missed": 8,
+        "rejected_only": 3,
+        "review_only": 0,
+        "valid": 20
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 3535,
+        "false_positives": 742,
+        "fragmentations": 19,
+        "gt_boxes": 7639,
+        "id_switches": 3,
+        "mostly_tracked": 6,
+        "mota": 0.4397,
+        "trajectories": 31,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 17,
+        "zone_id_switches": 0,
+        "zone_trajectories": 31
+      },
+      "valid_rate": 0.6452
+    },
+    {
+      "ci95_coverage": 0.2941,
+      "cond": "res640",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -3.6952,
+        "bias_ci": [
+          -4.9481,
+          -2.6105
+        ],
+        "mae": 3.6952,
+        "max_abs": 9.8604,
+        "n": 17,
+        "p95_abs": 7.7604,
+        "p95_abs_ci": [
+          5.2007,
+          9.8604
+        ],
+        "rmse": 4.4775,
+        "rmse_ci": [
+          3.1332,
+          5.7368
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 554.2563,
+        "gsd_along_m_per_px": 0.9258,
+        "tilt_deg": 6.1894
+      },
+      "gt_vehicles": 31,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 640
+      },
+      "median_u_kmh": 1.464,
+      "outcomes": {
+        "missed": 10,
+        "rejected_only": 3,
+        "review_only": 1,
+        "valid": 17
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 2436,
+        "false_positives": 522,
+        "fragmentations": 19,
+        "gt_boxes": 5800,
+        "id_switches": 0,
+        "mostly_tracked": 9,
+        "mota": 0.49,
+        "trajectories": 31,
+        "zone_fragmentations": 5,
+        "zone_fully_tracked_one_id": 11,
+        "zone_id_switches": 0,
+        "zone_trajectories": 31
+      },
+      "valid_rate": 0.5484
+    },
+    {
+      "ci95_coverage": 0.5385,
+      "cond": "res960",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -1.7908,
+        "bias_ci": [
+          -2.4183,
+          -1.189
+        ],
+        "mae": 1.9362,
+        "max_abs": 6.3939,
+        "n": 26,
+        "p95_abs": 3.8704,
+        "p95_abs_ci": [
+          2.8455,
+          6.3939
+        ],
+        "rmse": 2.3671,
+        "rmse_ci": [
+          1.7446,
+          3.0283
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 3,
+      "geometry": {
+        "focal_px": 831.3844,
+        "gsd_along_m_per_px": 0.6172,
+        "tilt_deg": 6.1894
+      },
+      "gt_vehicles": 31,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 960
+      },
+      "median_u_kmh": 1.0796,
+      "outcomes": {
+        "missed": 2,
+        "rejected_only": 2,
+        "review_only": 1,
+        "valid": 26
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 2336,
+        "false_positives": 631,
+        "fragmentations": 29,
+        "gt_boxes": 7640,
+        "id_switches": 0,
+        "mostly_tracked": 17,
+        "mota": 0.6116,
+        "trajectories": 31,
+        "zone_fragmentations": 8,
+        "zone_fully_tracked_one_id": 17,
+        "zone_id_switches": 0,
+        "zone_trajectories": 31
+      },
+      "valid_rate": 0.8387
+    },
+    {
+      "ci95_coverage": 0.9259,
+      "cond": "res1920",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.6462,
+        "bias_ci": [
+          -0.9023,
+          -0.4103
+        ],
+        "mae": 0.6826,
+        "max_abs": 2.3287,
+        "n": 27,
+        "p95_abs": 1.9351,
+        "p95_abs_ci": [
+          1.134,
+          2.3287
+        ],
+        "rmse": 0.9087,
+        "rmse_ci": [
+          0.6275,
+          1.166
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1662.7688,
+        "gsd_along_m_per_px": 0.3086,
+        "tilt_deg": 6.1894
+      },
+      "gt_vehicles": 31,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 1920
+      },
+      "median_u_kmh": 0.6556,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 2,
+        "review_only": 2,
+        "valid": 27
+      },
+      "runs": 3,
+      "tracking": {
+        "false_negatives": 1864,
+        "false_positives": 479,
+        "fragmentations": 19,
+        "gt_boxes": 7662,
+        "id_switches": 1,
+        "mostly_tracked": 17,
+        "mota": 0.6941,
+        "trajectories": 31,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 26,
+        "zone_id_switches": 0,
+        "zone_trajectories": 31
+      },
+      "valid_rate": 0.871
+    }
+  ],
+  "experiment": "e05_resolution",
+  "jobs": [
+    {
+      "cond": "hfov30",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 30.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 30.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 501,
+      "site": {}
+    },
+    {
+      "cond": "hfov30",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 30.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 30.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 502,
+      "site": {}
+    },
+    {
+      "cond": "hfov30",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 30.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 30.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 503,
+      "site": {}
+    },
+    {
+      "cond": "hfov45",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 45.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 45.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 501,
+      "site": {}
+    },
+    {
+      "cond": "hfov45",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 45.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 45.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 502,
+      "site": {}
+    },
+    {
+      "cond": "hfov45",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 45.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 45.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 503,
+      "site": {}
+    },
+    {
+      "cond": "hfov60",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 60.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 501,
+      "site": {}
+    },
+    {
+      "cond": "hfov60",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 60.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 502,
+      "site": {}
+    },
+    {
+      "cond": "hfov60",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 60.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 503,
+      "site": {}
+    },
+    {
+      "cond": "hfov75",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 75.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 75.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 501,
+      "site": {}
+    },
+    {
+      "cond": "hfov75",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 75.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 75.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 502,
+      "site": {}
+    },
+    {
+      "cond": "hfov75",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 75.0,
+        "series": "field of view",
+        "width": 1280
+      },
+      "overrides": {
+        "camera.hfov_deg": 75.0,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 503,
+      "site": {}
+    },
+    {
+      "cond": "res640",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 640
+      },
+      "overrides": {
+        "camera.height": 360,
+        "camera.width": 640,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 501,
+      "site": {}
+    },
+    {
+      "cond": "res640",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 640
+      },
+      "overrides": {
+        "camera.height": 360,
+        "camera.width": 640,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 502,
+      "site": {}
+    },
+    {
+      "cond": "res640",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 640
+      },
+      "overrides": {
+        "camera.height": 360,
+        "camera.width": 640,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 503,
+      "site": {}
+    },
+    {
+      "cond": "res960",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 960
+      },
+      "overrides": {
+        "camera.height": 540,
+        "camera.width": 960,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 501,
+      "site": {}
+    },
+    {
+      "cond": "res960",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 960
+      },
+      "overrides": {
+        "camera.height": 540,
+        "camera.width": 960,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 502,
+      "site": {}
+    },
+    {
+      "cond": "res960",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 960
+      },
+      "overrides": {
+        "camera.height": 540,
+        "camera.width": 960,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 503,
+      "site": {}
+    },
+    {
+      "cond": "res1920",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 1920
+      },
+      "overrides": {
+        "camera.height": 1080,
+        "camera.width": 1920,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 501,
+      "site": {}
+    },
+    {
+      "cond": "res1920",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 1920
+      },
+      "overrides": {
+        "camera.height": 1080,
+        "camera.width": 1920,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 502,
+      "site": {}
+    },
+    {
+      "cond": "res1920",
+      "duration": 90.0,
+      "level": {
+        "hfov_deg": 60.0,
+        "series": "resolution",
+        "width": 1920
+      },
+      "overrides": {
+        "camera.height": 1080,
+        "camera.width": 1920,
+        "zone.end_m": 70.0,
+        "zone.start_m": 40.0
+      },
+      "preset": "baseline",
+      "seed": 503,
+      "site": {}
+    }
+  ],
+  "note": "zone 40-70 m, 6 m pole, 30 fps; gsd = metres of road per pixel along the road at the zone centre",
+  "title": "Error vs field of view and resolution"
+}

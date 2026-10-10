@@ -1,0 +1,675 @@
+{
+  "conditions": [
+    {
+      "ci95_coverage": 0.8235,
+      "cond": "h3",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.3515,
+        "bias_ci": [
+          -0.5925,
+          -0.0862
+        ],
+        "mae": 0.6688,
+        "max_abs": 2.1106,
+        "n": 34,
+        "p95_abs": 1.7495,
+        "p95_abs_ci": [
+          1.2757,
+          2.1106
+        ],
+        "rmse": 0.8869,
+        "rmse_ci": [
+          0.6653,
+          1.0777
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.3764,
+        "tilt_deg": 4.829
+      },
+      "gt_vehicles": 39,
+      "level": {
+        "height_m": 3.0
+      },
+      "median_u_kmh": 0.5883,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 1,
+        "review_only": 4,
+        "valid": 34
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 2219,
+        "false_positives": 182,
+        "fragmentations": 57,
+        "gt_boxes": 10693,
+        "id_switches": 20,
+        "mostly_tracked": 19,
+        "mota": 0.7736,
+        "trajectories": 39,
+        "zone_fragmentations": 8,
+        "zone_fully_tracked_one_id": 30,
+        "zone_id_switches": 5,
+        "zone_trajectories": 39
+      },
+      "valid_rate": 0.8718
+    },
+    {
+      "ci95_coverage": 0.8649,
+      "cond": "h4.5",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.1119,
+        "bias_ci": [
+          -0.2882,
+          0.0357
+        ],
+        "mae": 0.3618,
+        "max_abs": 1.6809,
+        "n": 37,
+        "p95_abs": 0.8452,
+        "p95_abs_ci": [
+          0.659,
+          1.6809
+        ],
+        "rmse": 0.4909,
+        "rmse_ci": [
+          0.3494,
+          0.6497
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.2532,
+        "tilt_deg": 7.2222
+      },
+      "gt_vehicles": 39,
+      "level": {
+        "height_m": 4.5
+      },
+      "median_u_kmh": 0.3896,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 2,
+        "valid": 37
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 1554,
+        "false_positives": 309,
+        "fragmentations": 50,
+        "gt_boxes": 10637,
+        "id_switches": 9,
+        "mostly_tracked": 25,
+        "mota": 0.824,
+        "trajectories": 39,
+        "zone_fragmentations": 1,
+        "zone_fully_tracked_one_id": 35,
+        "zone_id_switches": 0,
+        "zone_trajectories": 39
+      },
+      "valid_rate": 0.9487
+    },
+    {
+      "ci95_coverage": 0.9744,
+      "cond": "h6",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": 0.0369,
+        "bias_ci": [
+          -0.0595,
+          0.1292
+        ],
+        "mae": 0.2221,
+        "max_abs": 0.9136,
+        "n": 39,
+        "p95_abs": 0.6169,
+        "p95_abs_ci": [
+          0.3748,
+          0.9136
+        ],
+        "rmse": 0.2946,
+        "rmse_ci": [
+          0.2107,
+          0.376
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 39,
+      "level": {
+        "height_m": 6.0
+      },
+      "median_u_kmh": 0.3437,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 39
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 1041,
+        "false_positives": 480,
+        "fragmentations": 50,
+        "gt_boxes": 10504,
+        "id_switches": 7,
+        "mostly_tracked": 33,
+        "mota": 0.8545,
+        "trajectories": 39,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 35,
+        "zone_id_switches": 1,
+        "zone_trajectories": 39
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 0.9744,
+      "cond": "h8",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0588,
+        "bias_ci": [
+          -0.1352,
+          0.0145
+        ],
+        "mae": 0.1681,
+        "max_abs": 0.95,
+        "n": 39,
+        "p95_abs": 0.4768,
+        "p95_abs_ci": [
+          0.2944,
+          0.95
+        ],
+        "rmse": 0.2465,
+        "rmse_ci": [
+          0.156,
+          0.3421
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1473,
+        "tilt_deg": 12.6959
+      },
+      "gt_vehicles": 39,
+      "level": {
+        "height_m": 8.0
+      },
+      "median_u_kmh": 0.2721,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 39
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 715,
+        "false_positives": 456,
+        "fragmentations": 33,
+        "gt_boxes": 10317,
+        "id_switches": 4,
+        "mostly_tracked": 34,
+        "mota": 0.8861,
+        "trajectories": 39,
+        "zone_fragmentations": 1,
+        "zone_fully_tracked_one_id": 36,
+        "zone_id_switches": 1,
+        "zone_trajectories": 39
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 1.0,
+      "cond": "h10",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.0638,
+        "bias_ci": [
+          -0.1083,
+          -0.0243
+        ],
+        "mae": 0.1088,
+        "max_abs": 0.5109,
+        "n": 39,
+        "p95_abs": 0.261,
+        "p95_abs_ci": [
+          0.1722,
+          0.5109
+        ],
+        "rmse": 0.1472,
+        "rmse_ci": [
+          0.0999,
+          0.1945
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.121,
+        "tilt_deg": 15.7276
+      },
+      "gt_vehicles": 39,
+      "level": {
+        "height_m": 10.0
+      },
+      "median_u_kmh": 0.2174,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 39
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 462,
+        "false_positives": 253,
+        "fragmentations": 24,
+        "gt_boxes": 10140,
+        "id_switches": 1,
+        "mostly_tracked": 37,
+        "mota": 0.9294,
+        "trajectories": 39,
+        "zone_fragmentations": 3,
+        "zone_fully_tracked_one_id": 35,
+        "zone_id_switches": 0,
+        "zone_trajectories": 39
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 1.0,
+      "cond": "h12",
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.1254,
+        "bias_ci": [
+          -0.1713,
+          -0.0849
+        ],
+        "mae": 0.1429,
+        "max_abs": 0.5849,
+        "n": 39,
+        "p95_abs": 0.3745,
+        "p95_abs_ci": [
+          0.2145,
+          0.5849
+        ],
+        "rmse": 0.1909,
+        "rmse_ci": [
+          0.1364,
+          0.2462
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1041,
+        "tilt_deg": 18.6715
+      },
+      "gt_vehicles": 39,
+      "level": {
+        "height_m": 12.0
+      },
+      "median_u_kmh": 0.1905,
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 39
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 304,
+        "false_positives": 309,
+        "fragmentations": 21,
+        "gt_boxes": 9999,
+        "id_switches": 0,
+        "mostly_tracked": 38,
+        "mota": 0.9387,
+        "trajectories": 39,
+        "zone_fragmentations": 3,
+        "zone_fully_tracked_one_id": 35,
+        "zone_id_switches": 0,
+        "zone_trajectories": 39
+      },
+      "valid_rate": 1.0
+    }
+  ],
+  "experiment": "e03_height",
+  "jobs": [
+    {
+      "cond": "h3",
+      "duration": 90.0,
+      "level": {
+        "height_m": 3.0
+      },
+      "overrides": {
+        "camera.height_m": 3.0
+      },
+      "preset": "baseline",
+      "seed": 301,
+      "site": {}
+    },
+    {
+      "cond": "h3",
+      "duration": 90.0,
+      "level": {
+        "height_m": 3.0
+      },
+      "overrides": {
+        "camera.height_m": 3.0
+      },
+      "preset": "baseline",
+      "seed": 302,
+      "site": {}
+    },
+    {
+      "cond": "h3",
+      "duration": 90.0,
+      "level": {
+        "height_m": 3.0
+      },
+      "overrides": {
+        "camera.height_m": 3.0
+      },
+      "preset": "baseline",
+      "seed": 303,
+      "site": {}
+    },
+    {
+      "cond": "h3",
+      "duration": 90.0,
+      "level": {
+        "height_m": 3.0
+      },
+      "overrides": {
+        "camera.height_m": 3.0
+      },
+      "preset": "baseline",
+      "seed": 304,
+      "site": {}
+    },
+    {
+      "cond": "h4.5",
+      "duration": 90.0,
+      "level": {
+        "height_m": 4.5
+      },
+      "overrides": {
+        "camera.height_m": 4.5
+      },
+      "preset": "baseline",
+      "seed": 301,
+      "site": {}
+    },
+    {
+      "cond": "h4.5",
+      "duration": 90.0,
+      "level": {
+        "height_m": 4.5
+      },
+      "overrides": {
+        "camera.height_m": 4.5
+      },
+      "preset": "baseline",
+      "seed": 302,
+      "site": {}
+    },
+    {
+      "cond": "h4.5",
+      "duration": 90.0,
+      "level": {
+        "height_m": 4.5
+      },
+      "overrides": {
+        "camera.height_m": 4.5
+      },
+      "preset": "baseline",
+      "seed": 303,
+      "site": {}
+    },
+    {
+      "cond": "h4.5",
+      "duration": 90.0,
+      "level": {
+        "height_m": 4.5
+      },
+      "overrides": {
+        "camera.height_m": 4.5
+      },
+      "preset": "baseline",
+      "seed": 304,
+      "site": {}
+    },
+    {
+      "cond": "h6",
+      "duration": 90.0,
+      "level": {
+        "height_m": 6.0
+      },
+      "overrides": {
+        "camera.height_m": 6.0
+      },
+      "preset": "baseline",
+      "seed": 301,
+      "site": {}
+    },
+    {
+      "cond": "h6",
+      "duration": 90.0,
+      "level": {
+        "height_m": 6.0
+      },
+      "overrides": {
+        "camera.height_m": 6.0
+      },
+      "preset": "baseline",
+      "seed": 302,
+      "site": {}
+    },
+    {
+      "cond": "h6",
+      "duration": 90.0,
+      "level": {
+        "height_m": 6.0
+      },
+      "overrides": {
+        "camera.height_m": 6.0
+      },
+      "preset": "baseline",
+      "seed": 303,
+      "site": {}
+    },
+    {
+      "cond": "h6",
+      "duration": 90.0,
+      "level": {
+        "height_m": 6.0
+      },
+      "overrides": {
+        "camera.height_m": 6.0
+      },
+      "preset": "baseline",
+      "seed": 304,
+      "site": {}
+    },
+    {
+      "cond": "h8",
+      "duration": 90.0,
+      "level": {
+        "height_m": 8.0
+      },
+      "overrides": {
+        "camera.height_m": 8.0
+      },
+      "preset": "baseline",
+      "seed": 301,
+      "site": {}
+    },
+    {
+      "cond": "h8",
+      "duration": 90.0,
+      "level": {
+        "height_m": 8.0
+      },
+      "overrides": {
+        "camera.height_m": 8.0
+      },
+      "preset": "baseline",
+      "seed": 302,
+      "site": {}
+    },
+    {
+      "cond": "h8",
+      "duration": 90.0,
+      "level": {
+        "height_m": 8.0
+      },
+      "overrides": {
+        "camera.height_m": 8.0
+      },
+      "preset": "baseline",
+      "seed": 303,
+      "site": {}
+    },
+    {
+      "cond": "h8",
+      "duration": 90.0,
+      "level": {
+        "height_m": 8.0
+      },
+      "overrides": {
+        "camera.height_m": 8.0
+      },
+      "preset": "baseline",
+      "seed": 304,
+      "site": {}
+    },
+    {
+      "cond": "h10",
+      "duration": 90.0,
+      "level": {
+        "height_m": 10.0
+      },
+      "overrides": {
+        "camera.height_m": 10.0
+      },
+      "preset": "baseline",
+      "seed": 301,
+      "site": {}
+    },
+    {
+      "cond": "h10",
+      "duration": 90.0,
+      "level": {
+        "height_m": 10.0
+      },
+      "overrides": {
+        "camera.height_m": 10.0
+      },
+      "preset": "baseline",
+      "seed": 302,
+      "site": {}
+    },
+    {
+      "cond": "h10",
+      "duration": 90.0,
+      "level": {
+        "height_m": 10.0
+      },
+      "overrides": {
+        "camera.height_m": 10.0
+      },
+      "preset": "baseline",
+      "seed": 303,
+      "site": {}
+    },
+    {
+      "cond": "h10",
+      "duration": 90.0,
+      "level": {
+        "height_m": 10.0
+      },
+      "overrides": {
+        "camera.height_m": 10.0
+      },
+      "preset": "baseline",
+      "seed": 304,
+      "site": {}
+    },
+    {
+      "cond": "h12",
+      "duration": 90.0,
+      "level": {
+        "height_m": 12.0
+      },
+      "overrides": {
+        "camera.height_m": 12.0
+      },
+      "preset": "baseline",
+      "seed": 301,
+      "site": {}
+    },
+    {
+      "cond": "h12",
+      "duration": 90.0,
+      "level": {
+        "height_m": 12.0
+      },
+      "overrides": {
+        "camera.height_m": 12.0
+      },
+      "preset": "baseline",
+      "seed": 302,
+      "site": {}
+    },
+    {
+      "cond": "h12",
+      "duration": 90.0,
+      "level": {
+        "height_m": 12.0
+      },
+      "overrides": {
+        "camera.height_m": 12.0
+      },
+      "preset": "baseline",
+      "seed": 303,
+      "site": {}
+    },
+    {
+      "cond": "h12",
+      "duration": 90.0,
+      "level": {
+        "height_m": 12.0
+      },
+      "overrides": {
+        "camera.height_m": 12.0
+      },
+      "preset": "baseline",
+      "seed": 304,
+      "site": {}
+    }
+  ],
+  "note": "zone 20-50 m; 60 deg HFOV, 1280x720, 30 fps",
+  "title": "Error vs camera height"
+}

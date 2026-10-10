@@ -1,0 +1,313 @@
+{
+  "caveat": "Simulation only: flat straight road, ideal pinhole lens, box-shaped vehicles, background subtraction detector, one parameter varied at a time around a 6 m / 60 deg / 1280x720 / 30 fps baseline with the zone 20-50 m from the pole. Treat as a starting point for the field pilot, not as validated limits.",
+  "criteria": [
+    "P95 |error| <= 2 km/h and >= 80% of vehicles measured",
+    "P95 |error| <= 1 km/h and >= 80% of vehicles measured"
+  ],
+  "statements": [
+    {
+      "criterion": "P95 |error| <= 2 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "parameter": "camera height (m)",
+      "source": "results/e03_height.json",
+      "statement": "mount the camera at least 3 m high (tested levels: 3, 4.5, 6, 8, 10, 12)",
+      "tested": [
+        3.0,
+        4.5,
+        6.0,
+        8.0,
+        10.0,
+        12.0
+      ]
+    },
+    {
+      "criterion": "P95 |error| <= 2 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "parameter": "zone centre distance (m)",
+      "source": "results/e02_distance.json",
+      "statement": "keep the zone centre within 25 m of the pole (tested levels: 25, 40, 55, 75, 95, 115)",
+      "tested": [
+        25,
+        40,
+        55,
+        75,
+        95,
+        115
+      ]
+    },
+    {
+      "criterion": "P95 |error| <= 2 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "parameter": "frame rate",
+      "source": "results/e06_fps.json",
+      "statement": "record at 10 frames/s or more (tested levels: 10, 15, 20, 25, 30, 50)",
+      "tested": [
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        50.0
+      ]
+    },
+    {
+      "criterion": "P95 |error| <= 2 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "parameter": "tilt offset (deg)",
+      "source": "results/e04_tilt.json",
+      "tested": [
+        -6.0,
+        -3.0,
+        0.0,
+        3.0,
+        6.0
+      ]
+    },
+    {
+      "conditions": [
+        "hfov30",
+        "res1920",
+        "hfov45",
+        "hfov60",
+        "hfov75",
+        "res960",
+        "res640"
+      ],
+      "criterion": "P95 |error| <= 2 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "parameter": "road length per pixel at the zone centre (m)",
+      "source": "results/e05_resolution.json",
+      "statement": "choose lens and resolution so one pixel covers at most 33 cm of road (along the road) at the zone centre",
+      "tested": [
+        0.2148,
+        0.3086,
+        0.3321,
+        0.4629,
+        0.6152,
+        0.6172,
+        0.9258
+      ]
+    },
+    {
+      "criterion": "P95 |error| <= 2 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "parameter": "flow per lane, 2-lane (veh/h)",
+      "source": "results/e08_density.json",
+      "statement": "2-lane: target met up to 700 veh/h per lane",
+      "tested": [
+        150,
+        300,
+        500,
+        700
+      ]
+    },
+    {
+      "criterion": "P95 |error| <= 2 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        true,
+        true
+      ],
+      "parameter": "flow per lane, 4-lane (veh/h)",
+      "source": "results/e08_density.json",
+      "statement": "4-lane: target met up to 600 veh/h per lane",
+      "tested": [
+        300,
+        450,
+        600
+      ]
+    },
+    {
+      "criterion": "P95 |error| <= 1 km/h and >= 80% of vehicles measured",
+      "meets": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "parameter": "camera height (m)",
+      "source": "results/e03_height.json",
+      "statement": "mount the camera at least 4.5 m high (tested levels: 3, 4.5, 6, 8, 10, 12)",
+      "tested": [
+        3.0,
+        4.5,
+        6.0,
+        8.0,
+        10.0,
+        12.0
+      ]
+    },
+    {
+      "criterion": "P95 |error| <= 1 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "parameter": "zone centre distance (m)",
+      "source": "results/e02_distance.json",
+      "statement": "keep the zone centre within 25 m of the pole (tested levels: 25, 40, 55, 75, 95, 115)",
+      "tested": [
+        25,
+        40,
+        55,
+        75,
+        95,
+        115
+      ]
+    },
+    {
+      "criterion": "P95 |error| <= 1 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "parameter": "frame rate",
+      "source": "results/e06_fps.json",
+      "statement": "record at 10 frames/s or more (tested levels: 10, 15, 20, 25, 30, 50)",
+      "tested": [
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        50.0
+      ]
+    },
+    {
+      "criterion": "P95 |error| <= 1 km/h and >= 80% of vehicles measured",
+      "meets": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "parameter": "tilt offset (deg)",
+      "source": "results/e04_tilt.json",
+      "tested": [
+        -6.0,
+        -3.0,
+        0.0,
+        3.0,
+        6.0
+      ]
+    },
+    {
+      "conditions": [
+        "hfov30",
+        "res1920",
+        "hfov45",
+        "hfov60",
+        "hfov75",
+        "res960",
+        "res640"
+      ],
+      "criterion": "P95 |error| <= 1 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "parameter": "road length per pixel at the zone centre (m)",
+      "source": "results/e05_resolution.json",
+      "statement": "choose lens and resolution so one pixel covers at most 21 cm of road (along the road) at the zone centre",
+      "tested": [
+        0.2148,
+        0.3086,
+        0.3321,
+        0.4629,
+        0.6152,
+        0.6172,
+        0.9258
+      ]
+    },
+    {
+      "criterion": "P95 |error| <= 1 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "parameter": "flow per lane, 2-lane (veh/h)",
+      "source": "results/e08_density.json",
+      "statement": "2-lane: target met up to 700 veh/h per lane",
+      "tested": [
+        150,
+        300,
+        500,
+        700
+      ]
+    },
+    {
+      "criterion": "P95 |error| <= 1 km/h and >= 80% of vehicles measured",
+      "meets": [
+        true,
+        true,
+        true
+      ],
+      "parameter": "flow per lane, 4-lane (veh/h)",
+      "source": "results/e08_density.json",
+      "statement": "4-lane: target met up to 600 veh/h per lane",
+      "tested": [
+        300,
+        450,
+        600
+      ]
+    }
+  ]
+}

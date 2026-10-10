@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "decision": null,
+      "direction": "away",
+      "flags": [
+        "mostly_merged",
+        "split",
+        "stitched"
+      ],
+      "lane": "away-1",
+      "reasons": [
+        "most zone observations came from a blob shared with another vehicle",
+        "track was split at an identity jump; this record is one piece",
+        "joined from track pieces consistent in lane, direction, speed and position"
+      ],
+      "record_id": 36,
+      "sheet": null,
+      "speed_kmh": 60.18,
+      "t_mid_s": 213.133
+    },
+    {
+      "decision": null,
+      "direction": "away",
+      "flags": [
+        "mostly_merged",
+        "split"
+      ],
+      "lane": "away-1",
+      "reasons": [
+        "most zone observations came from a blob shared with another vehicle",
+        "track was split at an identity jump; this record is one piece"
+      ],
+      "record_id": 47,
+      "sheet": null,
+      "speed_kmh": 74.78,
+      "t_mid_s": 281.632
+    }
+  ]
+}

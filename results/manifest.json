@@ -1,0 +1,27 @@
+{
+  "experiments": [
+    "e01_baseline",
+    "e02_distance",
+    "e03_height",
+    "e04_tilt",
+    "e05_resolution",
+    "e06_fps",
+    "e07_speed",
+    "e08_density",
+    "e09_calibration",
+    "e10_v85",
+    "e11_robustness",
+    "e12_contact",
+    "e13_probe"
+  ],
+  "note": "all results are from simulated video; see README for the simulation's limits",
+  "quick": false,
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "opencv": "5.0.0",
+    "python": "3.12.3",
+    "roadspeed": "0.1.0",
+    "scipy": "1.18.1"
+  }
+}

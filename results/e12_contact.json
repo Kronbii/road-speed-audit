@@ -1,0 +1,340 @@
+{
+  "experiment": "e12_contact",
+  "jobs": [
+    {
+      "cond": "bottom_refined",
+      "duration": 90.0,
+      "level": {
+        "model": "bottom edge, sub-pixel refined (default)"
+      },
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 1201,
+      "site": {}
+    },
+    {
+      "cond": "bottom_refined",
+      "duration": 90.0,
+      "level": {
+        "model": "bottom edge, sub-pixel refined (default)"
+      },
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 1202,
+      "site": {}
+    },
+    {
+      "cond": "bottom_refined",
+      "duration": 90.0,
+      "level": {
+        "model": "bottom edge, sub-pixel refined (default)"
+      },
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 1203,
+      "site": {}
+    },
+    {
+      "cond": "bottom_refined",
+      "duration": 90.0,
+      "level": {
+        "model": "bottom edge, sub-pixel refined (default)"
+      },
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 1204,
+      "site": {}
+    },
+    {
+      "cond": "bottom_raw",
+      "duration": 90.0,
+      "level": {
+        "model": "bottom edge, raw blob boundary"
+      },
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 1201,
+      "site": {
+        "detector": {
+          "backend": "bgsub",
+          "refine_bottom": false
+        }
+      }
+    },
+    {
+      "cond": "bottom_raw",
+      "duration": 90.0,
+      "level": {
+        "model": "bottom edge, raw blob boundary"
+      },
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 1202,
+      "site": {
+        "detector": {
+          "backend": "bgsub",
+          "refine_bottom": false
+        }
+      }
+    },
+    {
+      "cond": "bottom_raw",
+      "duration": 90.0,
+      "level": {
+        "model": "bottom edge, raw blob boundary"
+      },
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 1203,
+      "site": {
+        "detector": {
+          "backend": "bgsub",
+          "refine_bottom": false
+        }
+      }
+    },
+    {
+      "cond": "bottom_raw",
+      "duration": 90.0,
+      "level": {
+        "model": "bottom edge, raw blob boundary"
+      },
+      "overrides": {},
+      "preset": "baseline",
+      "seed": 1204,
+      "site": {
+        "detector": {
+          "backend": "bgsub",
+          "refine_bottom": false
+        }
+      }
+    }
+  ],
+  "rows": [
+    {
+      "ci95_coverage": 0.9412,
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -0.1027,
+        "bias_ci": [
+          -0.2685,
+          0.0584
+        ],
+        "mae": 0.3628,
+        "max_abs": 1.21,
+        "n": 34,
+        "p95_abs": 1.0699,
+        "p95_abs_ci": [
+          0.7005,
+          1.21
+        ],
+        "rmse": 0.4957,
+        "rmse_ci": [
+          0.3425,
+          0.6185
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "median_u_kmh": 0.4891,
+      "model": "bottom edge, sub-pixel refined (default)",
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 431,
+        "false_positives": 679,
+        "fragmentations": 15,
+        "gt_boxes": 6869,
+        "id_switches": 1,
+        "mostly_tracked": 29,
+        "mota": 0.8383,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 32,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 0.0588,
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": -1.2961,
+        "bias_ci": [
+          -1.5237,
+          -1.0766
+        ],
+        "mae": 1.2961,
+        "max_abs": 3.3085,
+        "n": 34,
+        "p95_abs": 2.5985,
+        "p95_abs_ci": [
+          1.6375,
+          3.3085
+        ],
+        "rmse": 1.4593,
+        "rmse_ci": [
+          1.2106,
+          1.716
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "median_u_kmh": 0.4703,
+      "model": "bottom edge, raw blob boundary",
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 0,
+        "valid": 34
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 446,
+        "false_positives": 735,
+        "fragmentations": 15,
+        "gt_boxes": 6869,
+        "id_switches": 1,
+        "mostly_tracked": 29,
+        "mota": 0.8279,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 32,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 1.0
+    },
+    {
+      "ci95_coverage": 0.0,
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": 11.0016,
+        "bias_ci": [
+          9.4165,
+          12.5445
+        ],
+        "mae": 11.0016,
+        "max_abs": 17.7436,
+        "n": 27,
+        "p95_abs": 17.4154,
+        "p95_abs_ci": [
+          15.1923,
+          17.7436
+        ],
+        "rmse": 11.7766,
+        "rmse_ci": [
+          10.2722,
+          13.1081
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "median_u_kmh": 0.6123,
+      "model": "box centre, ground homography",
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 7,
+        "valid": 27
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 431,
+        "false_positives": 679,
+        "fragmentations": 15,
+        "gt_boxes": 6869,
+        "id_switches": 1,
+        "mostly_tracked": 29,
+        "mota": 0.8383,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 32,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 0.7941
+    },
+    {
+      "ci95_coverage": 0.7,
+      "duplicate_valid_records": 0,
+      "error_valid_kmh": {
+        "bias": 0.5882,
+        "bias_ci": [
+          0.1083,
+          1.0998
+        ],
+        "mae": 1.011,
+        "max_abs": 5.0109,
+        "n": 30,
+        "p95_abs": 3.3601,
+        "p95_abs_ci": [
+          1.333,
+          5.0109
+        ],
+        "rmse": 1.5024,
+        "rmse_ci": [
+          0.7838,
+          2.1388
+        ]
+      },
+      "failed_runs": 0,
+      "false_valid_records": 0,
+      "geometry": {
+        "focal_px": 1108.5125,
+        "gsd_along_m_per_px": 0.1922,
+        "tilt_deg": 9.5903
+      },
+      "gt_vehicles": 34,
+      "median_u_kmh": 0.5864,
+      "model": "box centre, height-corrected (0.75 m)",
+      "outcomes": {
+        "missed": 0,
+        "rejected_only": 0,
+        "review_only": 4,
+        "valid": 30
+      },
+      "runs": 4,
+      "tracking": {
+        "false_negatives": 431,
+        "false_positives": 679,
+        "fragmentations": 15,
+        "gt_boxes": 6869,
+        "id_switches": 1,
+        "mostly_tracked": 29,
+        "mota": 0.8383,
+        "trajectories": 34,
+        "zone_fragmentations": 2,
+        "zone_fully_tracked_one_id": 32,
+        "zone_id_switches": 0,
+        "zone_trajectories": 34
+      },
+      "valid_rate": 0.8824
+    }
+  ],
+  "title": "Contact-point model"
+}
