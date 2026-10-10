@@ -38,9 +38,13 @@ strong camber; if the surface deviates from a plane by more than about 10 cm ove
 the zone, choose another site or shorten the zone.
 
 **Starting point for the camera set-up** (from simulation, to be confirmed by this
-protocol — see `results/guidance.json`): mount high rather than low, keep the zone
-near the camera rather than far, keep the zone fully inside the image with margin,
-and use at least 25 frames/s. The calibration points must surround the zone.
+protocol — see `results/guidance.json` and the README): mount the camera at least
+4.5 m high, keep the zone centre within about 25–40 m of the pole so that one pixel
+covers at most about 33 cm of road along the road at the zone centre, aim at the
+zone centre, keep poles and trees out of the line of sight to the zone, and keep
+the zone fully inside the image with margin. Frame rates of 10–50 frames/s made no
+difference in simulation; record at the camera's native rate. The calibration
+points must surround the zone.
 
 **Ground control points.** At least 8 (minimum 6) points on the road surface that
 are visible in the image and can be located to a centimetre: corners of dashed
@@ -135,10 +139,11 @@ For each matched pass: difference *d* = camera speed − reference speed.
    agreement (bias ± 1.96·SD) with their CIs, separately per direction and lane
    and pooled.
 2. **Proportional bias:** regress *d* on the mean speed. A slope different from
-   zero indicates a scale error (calibration, reference-point drift); simulation
-   (`results/e13_probe.json`) suggests a site scale factor estimated from a few
-   passes can remove most of a pure scale bias — verify this here by estimating the
-   factor on half of the passes and testing it on the other half.
+   zero indicates a scale error (calibration, reference-point drift). In simulation
+   (`results/e13_probe.json`) a scale factor estimated from five known-speed passes
+   halved the small residual bias of the 720p baseline; whether that carries over
+   must be tested here by estimating the factor on half of the passes and checking
+   it on the other half.
 3. **Honesty of stated uncertainty:** the share of passes with |*d*| ≤ 1.96·√(u² + u_ref²),
    where u is the tool's per-vehicle uncertainty and u_ref the reference's; it
    should be close to 95 %.

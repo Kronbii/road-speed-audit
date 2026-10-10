@@ -106,6 +106,7 @@ the repeated tape measurements.
 The default reference point is the bottom edge of the vehicle's blob, which lies
 (approximately) on the road. If you set `"speed": {"contact": "center",
 "contact_height_m": h}`, the box centre is used and corrected for its height `h`
-with the camera recovered from the homography. Simulation shows this is worse than
-the bottom edge unless the height is known for each vehicle
-(`results/e12_contact.json`).
+with the camera recovered from the homography. In simulation, with a fixed assumed
+height of 0.75 m, this was clearly worse than the default bottom edge (bias
+0.59 vs −0.10 km/h, 95th percentile of |error| 3.36 vs 1.07 km/h;
+`results/e12_contact.json`).
