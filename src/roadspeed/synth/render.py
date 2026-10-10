@@ -19,6 +19,7 @@ from .scene import ScenarioConfig, SimVehicle, build_camera, generate_traffic
 from .vehicles import HEX_FACES, Part, VehicleModel, _box
 
 NEAR = 0.3  # near clipping plane, metres
+SIDEWALK_M = 2.5
 SHIFT = 4  # sub-pixel bits for cv2 polygon drawing
 SCALE = float(1 << SHIFT)
 
@@ -137,7 +138,119 @@ class Renderer:
         tt = np.clip(elev / 0.45, 0, 1)[:, None]
         sky = np.array([232.0, 214.0, 192.0]) * (1 - tt) + np.array([205.0, 150.0, 95.0]) * tt
         col = np.where(ground[:, None], col, sky)
-        return col.reshape(Hh, W, 3).astype(np.float32)
+        img = col.reshape(Hh, W, 3)
+        img = self._draw_hills(img, ground.reshape(Hh, W), rays[:, 2].reshape(Hh, W))
+        img = self._draw_buildings(img)
+        return img.astype(np.float32)
+
+    # --------------------------------------------------------------- scenery
+    def _draw_hills(self, img, ground, ray_z):
+        """Distant hills above the horizon (sky pixels only)."""
+        rng = np.random.default_rng(np.random.SeedSequence([self.cfg.seed, 6]))
+        W = self.W
+        # angular height profile (radians) as smoothed noise over viewing azimuth
+        az = np.arctan2(
+            *self.cam.rays(np.stack([np.arange(W, dtype=float), np.full(W, self.Hh / 2)], 1))[
+                :, :2
+            ].T
+        )
+        grid = np.linspace(-np.pi, np.pi, 721)
+        prof = np.cumsum(rng.normal(0, 1, grid.size))
+        prof = np.convolve(prof - prof.mean(), np.ones(25) / 25, mode="same")
+        prof = 0.012 + 0.022 * (prof - prof.min()) / (np.ptp(prof) + 1e-9)
+        h = np.interp(az, grid, prof)  # (W,)
+        elev = np.arcsin(np.clip(ray_z, -1, 1))
+        mask = (~ground) & (elev >= 0) & (elev <= h[None, :])
+        hill = np.array([168.0, 162.0, 150.0])
+        tt = np.clip(elev / np.maximum(h[None, :], 1e-6), 0, 1)[..., None]
+        shade = hill * (0.92 + 0.08 * tt)
+        return np.where(mask[..., None], shade, img)
+
+    def _draw_buildings(self, img):
+        """Rows of simple buildings set back from both roadsides, baked into the background.
+
+        They sit outside the region between the camera and the road, so vehicles are
+        always in front of them and no per-frame depth ordering is needed.
+        """
+        road = self.cfg.road
+        rng = np.random.default_rng(np.random.SeedSequence([self.cfg.seed, 4]))
+        hw = road.width_m / 2 + road.shoulder_m + SIDEWALK_M
+        x_right = max(hw, self._C[0]) + 2.0
+        facades = [
+            (205, 214, 222),
+            (182, 196, 212),
+            (170, 178, 186),
+            (196, 205, 200),
+            (150, 170, 196),
+        ]
+        blds = []
+        for side, x0 in ((-1, -hw - 1.5), (1, x_right)):
+            y = -20.0 + rng.uniform(0, 8)
+            while y < 420.0:
+                w = rng.uniform(9, 22)
+                if rng.random() < 0.8:
+                    d = rng.uniform(8, 14)
+                    h = rng.choice(
+                        [3.2, 6.4, 9.6, 12.8, 16.0, 19.2], p=[0.1, 0.2, 0.25, 0.2, 0.15, 0.1]
+                    )
+                    setback = rng.uniform(0, 4)
+                    xa = x0 + side * setback
+                    xb = xa + side * d
+                    col = facades[rng.integers(len(facades))]
+                    blds.append((min(xa, xb), max(xa, xb), y, y + w, float(h), col, side))
+                y += w + rng.uniform(1.0, 8.0)
+        canvas = np.clip(np.rint(img), 0, 255).astype(np.uint8)
+        haze = np.array([196.0, 190.0, 182.0])
+        order = sorted(
+            blds,
+            key=lambda b: -np.hypot((b[0] + b[1]) / 2 - self._C[0], (b[2] + b[3]) / 2 - self._C[1]),
+        )
+        for x0, x1, y0, y1, h, col, side in order:
+            verts = _box(x0, x1, y0, y1, 0.0, h)
+            obj = _Object([Part(verts, [col] * 6, layer=1)])
+            Wv, Wn = obj.local_verts[0], obj.local_normals[0]
+            polys, sil, Pc = self._part_polys(Wv, Wn)
+            if not polys:
+                continue
+            dist = float(np.linalg.norm(Pc.mean(axis=0)))
+            a = 1.0 - np.exp(-dist / 1500.0)
+            cols = self._shade(obj.colors[0], Wn, 1.0) * (1 - a) + haze * a
+            for i, uv in polys:
+                pts = np.round(uv * SCALE)
+                if np.abs(pts).max() > 2**30:
+                    continue
+                cv2.fillConvexPoly(
+                    canvas,
+                    pts.astype(np.int32),
+                    tuple(float(c) for c in cols[i]),
+                    cv2.LINE_AA,
+                    SHIFT,
+                )
+            # windows on the facade facing the road
+            face = 5 if side < 0 else 4  # +x face for left-side buildings, -x for right side
+            xf = x1 if side < 0 else x0
+            if not any(i == face for i, _ in polys) or dist > 220:
+                continue
+            wc = np.clip(cols[face] * 0.45, 0, 255)
+            wc = tuple(float(c) for c in wc * (1 - a) + haze * a)
+            for zf in np.arange(1.0, h - 1.0, 3.2):
+                for yw in np.arange(y0 + 1.2, y1 - 1.6, 3.0):
+                    P = np.array(
+                        [
+                            [xf, yw, zf],
+                            [xf, yw + 1.4, zf],
+                            [xf, yw + 1.4, zf + 1.5],
+                            [xf, yw, zf + 1.5],
+                        ]
+                    )
+                    Pc2 = self._to_cam(P)
+                    if np.any(Pc2[:, 2] < NEAR):
+                        continue
+                    pts = np.round(self._proj(Pc2) * SCALE)
+                    if np.abs(pts).max() > 2**30:
+                        continue
+                    cv2.fillConvexPoly(canvas, pts.astype(np.int32), wc, cv2.LINE_AA, SHIFT)
+        return canvas.astype(np.float64)
 
     def _noise_tiles(self, rng: np.random.Generator, n: int) -> list[np.ndarray]:
         tiles = []
@@ -181,15 +294,18 @@ class Renderer:
 
         asphalt = np.array([92.0, 92.0, 95.0])
         gravel = np.array([120.0, 126.0, 130.0])
-        verge = np.array([62.0, 104.0, 92.0])
+        walk = np.array([168.0, 172.0, 174.0])  # pavement beyond the shoulder
+        verge = np.array([96.0, 128.0, 140.0])  # dusty ground (BGR)
         paint = np.array([222.0, 224.0, 225.0])
 
         c_road = box_cov(-hw, hw)
         c_sh = box_cov(-hw - sh, hw + sh) - c_road
-        c_verge = 1.0 - c_road - c_sh
+        c_walk = box_cov(-hw - sh - SIDEWALK_M, hw + sh + SIDEWALK_M) - c_road - c_sh
+        c_verge = 1.0 - c_road - c_sh - c_walk
         col = (
             c_road[:, None] * asphalt
             + c_sh[:, None] * gravel
+            + c_walk[:, None] * walk
             + c_verge[:, None] * verge
             + (noise * (0.7 + 0.6 * c_verge))[:, None]
         )
@@ -441,8 +557,16 @@ class Renderer:
         return self._noise_bank[j, dy : dy + self.Hh, dx : dx + self.W]
 
     # ------------------------------------------------------------ ground truth
+    def vehicle_mask(self, t: float) -> np.ndarray:
+        """Boolean image mask of visible vehicle pixels at time ``t`` (for figures)."""
+        return self._idbuf(t)[0] > 0
+
     def annotate(self, t: float) -> list[FrameAnnotation]:
         """Ground-truth boxes and visibility at time ``t`` from an ID buffer."""
+        idbuf, faces_by_slot, slot_vid = self._idbuf(t)
+        return self._annotations(idbuf, faces_by_slot, slot_vid)
+
+    def _idbuf(self, t: float):
         objs = self._objects_at(t)
         idbuf = np.zeros((self.Hh, self.W), np.uint16)
         faces_by_slot: dict[int, list] = {}
@@ -465,6 +589,9 @@ class Renderer:
                 if np.abs(pts).max() > 2**30:
                     continue
                 cv2.fillConvexPoly(idbuf, pts.astype(np.int32), val, cv2.LINE_8, SHIFT)
+        return idbuf, faces_by_slot, slot_vid
+
+    def _annotations(self, idbuf, faces_by_slot, slot_vid) -> list[FrameAnnotation]:
         anns = []
         for s, polys in faces_by_slot.items():
             if not polys:
