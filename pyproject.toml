@@ -46,6 +46,9 @@ src = ["src", "tests", "experiments"]
 select = ["E", "F", "W", "I", "B", "UP", "NPY"]
 ignore = ["E741"]
 
+[tool.ruff.lint.per-file-ignores]
+"src/roadspeed/report.py" = ["E501"]  # inline HTML template
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"

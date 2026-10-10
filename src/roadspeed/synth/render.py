@@ -101,7 +101,7 @@ class Renderer:
         return (np.array([x, y]), _Object([part]))
 
     def _render_background(self) -> np.ndarray:
-        cfg, cam = self.cfg, self.cam
+        cam = self.cam
         W, Hh = self.W, self.Hh
         u, v = np.meshgrid(np.arange(W, dtype=float), np.arange(Hh, dtype=float))
         uv = np.stack([u.ravel(), v.ravel()], axis=1)
@@ -368,13 +368,19 @@ class Renderer:
                 if sil is not None:
                     mean = cols[[i for i, _ in polys]].mean(axis=0)
                     pts = np.round(sil * SCALE).astype(np.int32)
-                    cv2.fillConvexPoly(canvas, pts, tuple(float(c) for c in mean), cv2.LINE_AA, SHIFT)
+                    cv2.fillConvexPoly(
+                        canvas, pts, tuple(float(c) for c in mean), cv2.LINE_AA, SHIFT
+                    )
                 for i, uv in polys:
                     pts = np.round(uv * SCALE)
                     if np.abs(pts).max() > 2**30:
                         continue
                     cv2.fillConvexPoly(
-                        canvas, pts.astype(np.int32), tuple(float(c) for c in cols[i]), cv2.LINE_AA, SHIFT
+                        canvas,
+                        pts.astype(np.int32),
+                        tuple(float(c) for c in cols[i]),
+                        cv2.LINE_AA,
+                        SHIFT,
                     )
 
     def _render_color(self, t: float) -> np.ndarray:
@@ -426,7 +432,9 @@ class Renderer:
             p = self._NOISE_PAD
             shape = (self._NOISE_BANK, self.Hh + p, self.W + p, 3)
             sig = float(self.cfg.camera.noise_sigma)
-            self._noise_bank = np.rint(rng.standard_normal(shape, dtype=np.float32) * sig).astype(np.int16)
+            self._noise_bank = np.rint(rng.standard_normal(shape, dtype=np.float32) * sig).astype(
+                np.int16
+            )
         r = np.random.default_rng(np.random.SeedSequence([self.cfg.seed, 2, k]))
         j = int(r.integers(self._NOISE_BANK))
         dy, dx = (int(v) for v in r.integers(0, self._NOISE_PAD, size=2))
@@ -482,13 +490,23 @@ class Renderer:
             if n_full == 0:
                 continue
             if len(xs):
-                bv = (cx1 + int(xs.min()), cy1 + int(ys.min()), cx1 + int(xs.max()), cy1 + int(ys.max()))
+                bv = (
+                    cx1 + int(xs.min()),
+                    cy1 + int(ys.min()),
+                    cx1 + int(xs.max()),
+                    cy1 + int(ys.max()),
+                )
             else:
                 bv = None
             anns.append(
                 FrameAnnotation(
                     vid=slot_vid[s],
-                    bbox_full=(float(max(x1, 0)), float(max(y1, 0)), float(min(x2, self.W - 1)), float(min(y2, self.Hh - 1))),
+                    bbox_full=(
+                        float(max(x1, 0)),
+                        float(max(y1, 0)),
+                        float(min(x2, self.W - 1)),
+                        float(min(y2, self.Hh - 1)),
+                    ),
                     bbox_visible=bv,
                     visibility=len(xs) / n_full,
                     truncated=truncated,

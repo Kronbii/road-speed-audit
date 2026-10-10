@@ -23,7 +23,14 @@ CLASS_DIMS = {
     "motorcycle": (2.1, 0.80, 1.55, 0.10),
 }
 
-DEFAULT_MIX = {"car": 0.64, "suv": 0.14, "van": 0.08, "truck": 0.06, "bus": 0.03, "motorcycle": 0.05}
+DEFAULT_MIX = {
+    "car": 0.64,
+    "suv": 0.14,
+    "van": 0.08,
+    "truck": 0.06,
+    "bus": 0.03,
+    "motorcycle": 0.05,
+}
 
 # BGR body colours and rough relative frequencies (assumed, for variety only)
 PALETTE = [
@@ -174,4 +181,6 @@ def build_vehicle(cls: str, rng: np.random.Generator) -> VehicleModel:
     else:  # pragma: no cover - guarded by CLASS_DIMS
         raise ValueError(f"unknown vehicle class {cls!r}")
 
-    return VehicleModel(cls=cls, length=L, width=W, height=H, clearance=clr, color=color, parts=parts)
+    return VehicleModel(
+        cls=cls, length=L, width=W, height=H, clearance=clr, color=color, parts=parts
+    )

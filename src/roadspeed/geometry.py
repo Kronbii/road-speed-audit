@@ -321,7 +321,10 @@ class PinholeCamera:
         if focal_px is None:
             # Two constraints on w = 1/f^2:  w*a1 + b1 = 0 and w*a2 + b2 = 0
             a = np.array(
-                [g1[0] * g2[0] + g1[1] * g2[1], (g1[0] ** 2 + g1[1] ** 2) - (g2[0] ** 2 + g2[1] ** 2)]
+                [
+                    g1[0] * g2[0] + g1[1] * g2[1],
+                    (g1[0] ** 2 + g1[1] ** 2) - (g2[0] ** 2 + g2[1] ** 2),
+                ]
             )
             b = np.array([g1[2] * g2[2], g1[2] ** 2 - g2[2] ** 2])
             # Ordinary least squares in w. Both residuals have the same units

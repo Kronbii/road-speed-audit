@@ -202,7 +202,9 @@ class SimVehicle:
 
     def y_at(self, t):
         """Along-road position of the footprint centre (metres, world Y)."""
-        return self.y_center + self.direction * self.speed_mps * (np.asarray(t, float) - self.t_center)
+        return self.y_center + self.direction * self.speed_mps * (
+            np.asarray(t, float) - self.t_center
+        )
 
     def time_at_y(self, y: float) -> float:
         """Time at which the footprint centre is at along-road position ``y``."""
@@ -228,7 +230,6 @@ def generate_traffic(cfg: ScenarioConfig) -> list[SimVehicle]:
     Vehicles are generated for zone-centre crossing times from ``-pre`` to
     ``duration + post`` so the scene is already in steady state at t = 0.
     """
-    rng = np.random.default_rng(np.random.SeedSequence([cfg.seed, 1]))
     road, tr, zone = cfg.road, cfg.traffic, cfg.zone
     yc = zone.center_m
     centers = road.lane_centers()
@@ -238,7 +239,7 @@ def generate_traffic(cfg: ScenarioConfig) -> list[SimVehicle]:
     probs /= probs.sum()
     rate = tr.flow_veh_h_per_lane / 3600.0
     pre = (road.visible_far_m - road.visible_near_m) / (tr.speed_min_kmh / 3.6)
-    t_lo, t_hi = -min(pre, 60.0), cfg.duration_s + min(pre, 60.0)
+    t_lo, t_hi = -60.0, cfg.duration_s + min(pre, 60.0)
     vehicles: list[SimVehicle] = []
     vid = 0
     for lane in range(road.n_lanes):
@@ -248,6 +249,8 @@ def generate_traffic(cfg: ScenarioConfig) -> list[SimVehicle]:
             before, after = yc - road.visible_near_m, road.visible_far_m - yc
         else:
             before, after = road.visible_far_m - yc, yc - road.visible_near_m
+        # one random stream per lane, so a longer duration only appends vehicles
+        rng = np.random.default_rng(np.random.SeedSequence([cfg.seed, 1, lane]))
         t = t_lo
         prev = None
         while True:
