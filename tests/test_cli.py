@@ -36,3 +36,13 @@ def test_calibrate_from_points(tmp_path, camera):
     site = json.loads(out.read_text())
     assert site["zone"] == {"start_m": 20.0, "end_m": 50.0}
     assert len(site["lanes"]) == 2 and site["speed_limit_kmh"] == 50
+
+
+def test_review_accept_reject(tmp_path):
+    from roadspeed.review import load_decisions
+
+    assert (
+        main(["review", str(tmp_path), "--accept", "3", "5", "--reject", "7", "--reviewer", "t"])
+        == 0
+    )
+    assert load_decisions(tmp_path) == {3: "accept", 5: "accept", 7: "reject"}
