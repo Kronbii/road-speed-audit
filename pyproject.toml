@@ -48,6 +48,7 @@ ignore = ["E741"]
 
 [tool.ruff.lint.per-file-ignores]
 "src/roadspeed/report.py" = ["E501"]  # inline HTML template
+"experiments/*" = ["E501"]  # plotting and table-formatting code
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

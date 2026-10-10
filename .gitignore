@@ -23,3 +23,7 @@ work/
 # Environment / secrets
 .env
 .env.*
+
+# quick-mode experiment outputs (the full outputs in results/ and figures/ are committed)
+results/quick/
+figures/quick/

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "road-speed-audit: camera-based vehicle speed measurement on one road segment, validated on synthetic ground truth"
+abstract: >-
+  An offline, privacy-preserving tool that measures vehicle speeds on one road
+  segment from a fixed camera (homography calibration, background-subtraction
+  detection, a SORT/ByteTrack-style tracker, robust speed fitting with
+  Monte-Carlo uncertainty) and reports municipal speed statistics. Accuracy is
+  characterised on simulated video with exact ground truth; no field validation
+  has been carried out yet.
+type: software
+authors:
+  - family-names: Kronbi
+    given-names: Rami
+    affiliation: "Independent researcher"
+version: 0.1.0
+date-released: "2026-10-10"
+license: MIT
+keywords:
+  - road safety
+  - speed measurement
+  - homography
+  - multi-object tracking
+  - computer vision
+  - synthetic data
